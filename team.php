@@ -11,8 +11,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/team.css">
-    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/team.css">
+    <link rel="stylesheet" type="text/css" href="src/css/templatemo-style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
@@ -48,7 +48,7 @@ session_start();
                     <div class="our-team">
 
                         <div class="pic">
-                            <img src="img/anirbn.jpg" style="height: 100%;">
+                            <img src="src/img/anirbn.jpg" style="height: 100%;">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Dr. Anirban Chowdhary</h3>
@@ -67,7 +67,7 @@ session_start();
                     </div> -->
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/gaurav.jpeg">
+                            <img src="src/img/gaurav.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Gaurav Pratap Singh</h3>
@@ -90,7 +90,7 @@ session_start();
 
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/vvek.jpg">
+                            <img src="src/img/vvek.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Vivek Garg</h3>
@@ -125,7 +125,7 @@ session_start();
                     </div>
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/abhi.jpg">
+                            <img src="src/img/abhi.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Abhinav Gyan</h3>
@@ -150,7 +150,7 @@ session_start();
                     </div>
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/sampurn.jpg">
+                            <img src="src/img/sampurn.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Sampurn Kashyap</h3>
@@ -172,7 +172,7 @@ session_start();
                     </div>
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/jskrn.jpg">
+                            <img src="src/img/jskrn.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Jaskaran Singh</h3>
@@ -217,7 +217,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/pranay.jpg">
+                            <img src="src/img/pranay.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Pranay Gupta</h3>
@@ -239,7 +239,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/somenath.jpg" style="height: 100%;">
+                            <img src="src/img/somenath.jpg" style="height: 100%;">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Somenath Sarkar</h3>
@@ -268,7 +268,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/akash.jpg">
+                            <img src="src/img/akash.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Akash Balaji</h3>
@@ -287,7 +287,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/anuj.jpeg.jpeg">
+                            <img src="src/img/anuj.jpeg.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Anuj Kumar Yadav</h3>
@@ -313,7 +313,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/mahathi.jpg">
+                            <img src="src/img/mahathi.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">M Mahathi</h3>
@@ -329,7 +329,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/yuvid.jpg">
+                            <img src="src/img/yuvid.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Yuvi Dhelawat</h3>
@@ -358,7 +358,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/lavanya.jpeg">
+                            <img src="src/img/lavanya.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Lavanya Naresh</h3>
@@ -389,7 +389,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/amank.jpeg">
+                            <img src="src/img/amank.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Aman Kumar</h3>
@@ -424,7 +424,7 @@ session_start();
                     <div class="our-team">
 
                         <div class="pic">
-                            <img src="img/anirbn.jpg" style="height: 100%;">
+                            <img src="src/img/anirbn.jpg" style="height: 100%;">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Dr. Anirban Chowdhary</h3>
@@ -443,7 +443,7 @@ session_start();
                     </div> -->
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/vvek.jpg">
+                            <img src="src/img/vvek.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Vivek Garg</h3>
@@ -466,7 +466,7 @@ session_start();
 
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/abhi.jpg">
+                            <img src="src/img/abhi.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Abhinav Gyan</h3>
@@ -503,7 +503,7 @@ session_start();
                     </div>
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/abhi.jpg">
+                            <img src="src/img/abhi.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Abhinav Gyan</h3>
@@ -528,7 +528,7 @@ session_start();
                     </div>
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/sampurn.jpg">
+                            <img src="src/img/sampurn.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Sampurn Kashyap</h3>
@@ -550,7 +550,7 @@ session_start();
                     </div>
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/jskrn.jpg">
+                            <img src="src/img/jskrn.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Jaskaran Singh</h3>
@@ -595,7 +595,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/vatsal.jpeg">
+                            <img src="src/img/vatsal.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Vatsal Singhal</h3>
@@ -617,7 +617,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/adarsh.jpg" style="height: 100%;">
+                            <img src="src/img/adarsh.jpg" style="height: 100%;">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Adarsh Chaudhary</h3>
@@ -646,7 +646,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/saurabh.jpg">
+                            <img src="src/img/saurabh.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Saurabh Gupta</h3>
@@ -662,7 +662,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/anuj.jpeg">
+                            <img src="src/img/anuj.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Anuj Shashtri</h3>
@@ -688,7 +688,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/avi.jpg">
+                            <img src="src/img/avi.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Avinash Singh</h3>
@@ -704,7 +704,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/himanshu.jpg">
+                            <img src="src/img/himanshu.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Himanshu Gupta</h3>
@@ -730,7 +730,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/hit.jpeg">
+                            <img src="src/img/hit.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Hit Vardhan</h3>
@@ -749,7 +749,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/mohit.jpeg">
+                            <img src="src/img/mohit.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Mohit Kishore</h3>
@@ -778,7 +778,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/raghu.jpeg">
+                            <img src="src/img/raghu.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Raghuvamsi Veerapaneni</h3>
@@ -797,7 +797,7 @@ session_start();
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/utkrsh.jpeg">
+                            <img src="src/img/utkrsh.jpeg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Utkarsh</h3>
@@ -832,7 +832,7 @@ session_start();
                     </div> -->
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/abhi.jpg">
+                            <img src="src/img/abhi.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Abhinav Gyan</h3>
@@ -858,7 +858,7 @@ session_start();
                     </div> -->
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/sampurn.jpg">
+                            <img src="src/img/sampurn.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Sampurn Kashyap</h3>
@@ -881,7 +881,7 @@ session_start();
                     </div> -->
                     <div class="our-team">
                         <div class="pic">
-                            <img src="img/jskrn.jpg">
+                            <img src="src/img/jskrn.jpg">
                         </div>
                         <div class="team-content">
                             <h3 class="title">Jaskaran Singh</h3>

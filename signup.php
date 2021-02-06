@@ -15,8 +15,8 @@
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/team.css">
-    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/team.css">
+    <link rel="stylesheet" type="text/css" href="src/css/templatemo-style.css">
     
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
@@ -30,19 +30,19 @@
         
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/timeline.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="src/css/fontAwesome.css">
+        <link rel="stylesheet" href="src/css/light-box.css">
+        <link rel="stylesheet" href="src/css/timeline.css">
+        <link rel="stylesheet" href="src/css/owl-carousel.css">
+        <link rel="stylesheet" href="src/css/templatemo-style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         
 
-<link type="text/css"  rel="stylesheet" href="css/signup.css">
-<link rel="stylesheet" href="css/templatemo-style.css">
+<link type="text/css"  rel="stylesheet" href="src/css/signup.css">
+<link rel="stylesheet" href="src/css/templatemo-style.css">
 <script type="text/javascript" src="//connect.facebook.net/en_US/all.js#xfbml=1&appId=224254148413683" id="facebook-jssdk"></script><script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
 <style>
     .section-heading h1{

@@ -20,19 +20,19 @@
         
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/profile.css">
-        <link rel="stylesheet" href="css/award.css">
+        <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="src/css/fontAwesome.css">
+        <link rel="stylesheet" href="src/css/light-box.css">
+        <link rel="stylesheet" href="src/css/owl-carousel.css">
+        <link rel="stylesheet" href="src/css/profile.css">
+        <link rel="stylesheet" href="src/css/award.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-		<link rel="stylesheet" href="css/cards.css" >
-        <link rel="stylesheet" href="css/main.css" />
-        <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<link rel="stylesheet" href="src/css/cards.css" >
+        <link rel="stylesheet" href="src/css/main.css" />
+        <noscript><link rel="stylesheet" href="src/css/noscript.css" /></noscript>
+        <script src="src/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <style>
             @media screen and (max-width:991px){
                 .row .col-md-3{
@@ -132,7 +132,7 @@
 
         <div class="sidebar-navigation hidde-sm hidden-xs">
             <div class="logo">
-                <img src="img/logo1.png" class="static">
+                <img src="src/img/logo1.png" class="static">
             </div>
             <br>
             <nav>
@@ -464,21 +464,21 @@
         </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="src/js/vendor/bootstrap.min.js"></script>
     
-    		<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/browser.min.js"></script>
-			<script src="js/breakpoints.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main2.js"></script>
+    		<script src="src/js/jquery.min.js"></script>
+			<script src="src/js/jquery.scrolly.min.js"></script>
+			<script src="src/js/browser.min.js"></script>
+			<script src="src/js/breakpoints.min.js"></script>
+			<script src="src/js/util.js"></script>
+			<script src="src/js/main2.js"></script>
 
         
         
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="src/js/plugins.js"></script>
+    <script src="src/js/main.js"></script>
     <script>
         // Hide Header on on scroll down
         var didScroll;

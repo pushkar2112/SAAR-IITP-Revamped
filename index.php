@@ -15,14 +15,14 @@
         
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/timeline.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="src/css/fontAwesome.css">
+        <link rel="stylesheet" href="src/css/light-box.css">
+        <link rel="stylesheet" href="src/css/timeline.css">
+        <link rel="stylesheet" href="src/css/owl-carousel.css">
+        <link rel="stylesheet" href="src/css/templatemo-style.css">
+        <link rel="stylesheet" href="src/css/dropdown.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         
@@ -40,7 +40,7 @@
             }
         </style>
         
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="src/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
     <body>
@@ -87,7 +87,7 @@
 
         <div class="sidebar-navigation hidde-sm hidden-xs">
             <div class="logo">
-                <img src="img/logo1.png" class="static">
+                <img src="src/img/logo1.png" class="static">
             </div>
             <nav>
                 <?php
@@ -238,7 +238,7 @@
                     <h1><span>About Us</span></h1>
                     <div class="col-md-6">
                         <div class="image">
-                            <img src="img/abt.jpeg">
+                            <img src="src/img/abt.jpeg">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -261,32 +261,32 @@
                         <div class="row" style="background-color: #fff;">
                             <div class="item">
                                 <div class="col-md-8">
-                                    <a href="img/FB_IMG_1547760148443.jpg" data-lightbox="image"><img src="img/FB_IMG_1547760148443.jpg" alt="image 1"></a>
+                                    <a href="src/img/FB_IMG_1547760148443.jpg" data-lightbox="image"><img src="src/img/FB_IMG_1547760148443.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item second-item">
                                 <div class="col-md-4">
-                                    <a href="img/cs.jpg" data-lightbox="image"><img src="img/cs.jpg" alt="image 2"></a>
+                                    <a href="src/img/cs.jpg" data-lightbox="image"><img src="src/img/cs.jpg" alt="image 2"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/ee.jpg" data-lightbox="image"><img src="img/ee.jpg" alt="image 3"></a>
+                                    <a href="src/img/ee.jpg" data-lightbox="image"><img src="src/img/ee.jpg" alt="image 3"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/mech.jpg" data-lightbox="image"><img src="img/mech.jpg" alt="image 4"></a>
+                                    <a href="src/img/mech.jpg" data-lightbox="image"><img src="src/img/mech.jpg" alt="image 4"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/chem.jpg" data-lightbox="image"><img src="img/chem.jpg" alt="image 5"></a>
+                                    <a href="src/img/chem.jpg" data-lightbox="image"><img src="src/img/chem.jpg" alt="image 5"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/civ.jpg" data-lightbox="image"><img src="img/civ.jpg" alt="image 6"></a>
+                                    <a href="src/img/civ.jpg" data-lightbox="image"><img src="src/img/civ.jpg" alt="image 6"></a>
                                 </div>
                             </div>
                         </div>
@@ -310,7 +310,7 @@
                             <h1><span>Anusmriti <em></em></span></h1>
                     </div> 
                     <div style="position:relative;">
-                        <img src="img/anu.jpeg" alt="Anusmriti">
+                        <img src="src/img/anu.jpeg" alt="Anusmriti">
                         <div class="dropdown">
                             <button class="dropbtn">Read Anusmriti</button>
                             <div class="dropdown-content">
@@ -481,13 +481,13 @@
         </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="src/js/vendor/bootstrap.min.js"></script>
     
-    <script src="js/timeline.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="src/js/timeline.js"></script>
+    <script src="src/js/plugins.js"></script>
+    <script src="src/js/main.js"></script>
     <script>
         // Hide Header on on scroll down
         var didScroll;

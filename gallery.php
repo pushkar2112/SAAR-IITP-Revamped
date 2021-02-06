@@ -9,16 +9,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="src/css/fontAwesome.css">
+        <link rel="stylesheet" href="src/css/light-box.css">
+        <link rel="stylesheet" href="src/css/owl-carousel.css">
+        <link rel="stylesheet" href="src/css/templatemo-style.css">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="src/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     
 <body>
@@ -49,7 +49,7 @@
 
         <div class="sidebar-navigation hidde-sm hidden-xs">
             <div class="logo">
-                <img src="img/logo1.png" class="static">
+                <img src="src/img/logo1.png" class="static">
             </div>
             <nav>
                 <ul>
@@ -138,22 +138,22 @@
                             </div>
                               <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/ee.jpg" data-lightbox="image"><img src="img/ee.jpg" alt="image 3"></a>
+                                    <a href="src/img/ee.jpg" data-lightbox="image"><img src="src/img/ee.jpg" alt="image 3"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/mech.jpg" data-lightbox="image"><img src="img/mech.jpg" alt="image 4"></a>
+                                    <a href="src/img/mech.jpg" data-lightbox="image"><img src="src/img/mech.jpg" alt="image 4"></a>
                                 </div>
                             </div> 
                           <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/btech14-18ch.jpg" data-lightbox="image"><img src="img/btech14-18ch.jpg" alt="image 5"></a>
+                                    <a href="src/img/btech14-18ch.jpg" data-lightbox="image"><img src="src/img/btech14-18ch.jpg" alt="image 5"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/btech14-18ce.jpg" data-lightbox="image"><img src="img/btech14-18ce.jpg" alt="image 6"></a>
+                                    <a href="src/img/btech14-18ce.jpg" data-lightbox="image"><img src="src/img/btech14-18ce.jpg" alt="image 6"></a>
                                 </div>
                             </div>
 
@@ -163,62 +163,62 @@
 
                            <!--  <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/pus.jpg" data-lightbox="image"><img src="img/pus.jpg" alt="image 1"></a>
+                                    <a href="src/img/pus.jpg" data-lightbox="image"><img src="src/img/pus.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/chem.jpg" data-lightbox="image"><img src="img/chem.jpg" alt="image 1"></a>
+                                    <a href="src/img/chem.jpg" data-lightbox="image"><img src="src/img/chem.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/cs.jpg" data-lightbox="image"><img src="img/cs.jpg" alt="image 1"></a>
+                                    <a href="src/img/cs.jpg" data-lightbox="image"><img src="src/img/cs.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/mech.jpg" data-lightbox="image"><img src="img/mech.jpg" alt="image 1"></a>
+                                    <a href="src/img/mech.jpg" data-lightbox="image"><img src="src/img/mech.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/ee.jpg" data-lightbox="image"><img src="img/ee.jpg" alt="image 1"></a>
+                                    <a href="src/img/ee.jpg" data-lightbox="image"><img src="src/img/ee.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/civ.jpg" data-lightbox="image"><img src="img/civ.jpg" alt="image 1"></a>
+                                    <a href="src/img/civ.jpg" data-lightbox="image"><img src="src/img/civ.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/meeet.jpg" data-lightbox="image"><img src="img/meeet.jpg" alt="image 1"></a>
+                                    <a href="src/img/meeet.jpg" data-lightbox="image"><img src="src/img/meeet.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/dou.jpg" data-lightbox="image"><img src="img/dou.jpg" alt="image 1"></a>
+                                    <a href="src/img/dou.jpg" data-lightbox="image"><img src="src/img/dou.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/DSC_7823.JPG" data-lightbox="image"><img src="img/DSC_7823.JPG" alt="image 1"></a>
+                                    <a href="src/img/DSC_7823.JPG" data-lightbox="image"><img src="src/img/DSC_7823.JPG" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/FB_IMG_1547760048483.jpg" data-lightbox="image"><img src="img/FB_IMG_1547760048483.jpg" alt="image 1"></a>
+                                    <a href="src/img/FB_IMG_1547760048483.jpg" data-lightbox="image"><img src="src/img/FB_IMG_1547760048483.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/FB_IMG_1547760148443.jpg" data-lightbox="image"><img src="img/FB_IMG_1547760148443.jpg" alt="image 1"></a>
+                                    <a href="src/img/FB_IMG_1547760148443.jpg" data-lightbox="image"><img src="src/img/FB_IMG_1547760148443.jpg" alt="image 1"></a>
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="col-md-4">
-                                    <a href="img/uts.jpg" data-lightbox="image"><img src="img/uts.jpg" alt="image 1"></a>
+                                    <a href="src/img/uts.jpg" data-lightbox="image"><img src="src/img/uts.jpg" alt="image 1"></a>
                                 </div>
                             </div> -->
                             
@@ -287,12 +287,12 @@
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="src/js/vendor/bootstrap.min.js"></script>
     
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="src/js/plugins.js"></script>
+    <script src="src/js/main.js"></script>
 
     <script>
      

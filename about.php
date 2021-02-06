@@ -12,16 +12,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="src/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="src/css/fontAwesome.css">
+        <link rel="stylesheet" href="src/css/light-box.css">
+        <link rel="stylesheet" href="src/css/owl-carousel.css">
+        <link rel="stylesheet" href="src/css/templatemo-style.css">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="src/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <style>
             .section-heading div{
                 padding: 10px 20px;
@@ -90,7 +90,7 @@
 
         <div class="sidebar-navigation hidde-sm hidden-xs">
             <div class="logo">
-                <img src="img/logo1.png" class="static">
+                <img src="src/img/logo1.png" class="static">
             </div>
             <nav>
                 <div style="margin-top:-10px;">
@@ -223,12 +223,12 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="src/js/vendor/bootstrap.min.js"></script>
     
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="src/js/plugins.js"></script>
+    <script src="src/js/main.js"></script>
 
     <script>
         // Hide Header on on scroll down
