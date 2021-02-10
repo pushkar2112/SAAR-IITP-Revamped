@@ -1,0 +1,64 @@
+/* For the underlined */
+
+.tab {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    max-width: 150px;
+}
+
+.hoverable {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+}
+
+.hoverable::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 20%;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(99, 91, 91);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.hoverable:hover::before,
+.hoverable:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+#myNavbar :hover,
+#myNavbar :focus,
+#myNavbar :active {
+    text-decoration: none;
+}
+
+
+/* Override the default bootstrap style */
+
+#myNavbar :hover,
+#myNavbar :focus,
+#myNavbar :active {
+    color: rgb(99, 91, 91);
+    background-color: transparent;
+}
+
+
+/* For the toggle bar of the menu when the screen resized */
+
+.icon-bar {
+    background-color: blanchedalmond;
+}
