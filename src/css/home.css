@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    /* Image slider on landing */
+    --box-border-size: 26px;
+    --box-spacing: 10px;
+    --box-offset-x: 40px;
+    
+    --box-shadow-a: 3px 1px 5px rgba(0,0,0,0.25);
+}
+
+section{
+    min-height: 100vh;
+}
+
+.landing{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(to bottom, #83E1F8, #BBF0FB, #F1FFF8);
+}
+
+/* Image slider on landing */
+
+.image-wrapper{
+    position: relative;
+    top: 50vh;
+    left: 0;
+    width: fit-content;
+    height: fit-content;
+    transform: translate(0, -50vh) perspective(400px) rotateY(2deg);
+}
+
+.image-wrapper img{
+    position: relative;
+    height: 80vh;
+    max-height: calc(55vw * 0.56);
+    height: auto;
+    box-shadow: var(--box-shadow-a);
+}
+
+.image-wrapper .box{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: var(--box-offset-x);
+    width: calc(100% - var(--box-border-size)*2 - var(--box-offset-x)*2.5);
+    height: calc(100% + 2*var(--box-spacing));
+    border: var(--box-border-size) solid #76efeb;
+    transform: translate(0, -50%);
+    box-shadow:
+        var(--box-shadow-a),
+        var(--box-shadow-a) inset;
+    box-sizing: content-box;
+}
+
+.image-wrapper .box-b{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: var(--box-offset-x);
+    width: var(--box-border-size);
+    height: calc(100% + 2*var(--box-spacing));
+    background-color: #76efeb;
+    transform: translate(0, -50%);
+    box-shadow: var(--box-shadow-a);
+    box-sizing: content-box;
+    clip-path: polygon(-20px 0, calc(100% + 20px) 0, calc(100% + 20px) 100%, -20px 100%);
+}
+
+/* Landing logo area */
+
+.logo{
+    display: flex;
+    position: relative;
+    top: 5vh;
+    margin-right: 7%;
+    color: #272727;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-shadow: 0 3px 9px rgba(0,0,0,0.16);
+}
+
+.logo h1{
+    margin: 10px 0;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.logo h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.logo h3::before{
+    content: '';
+    display: block;
+    position: relative;
+    left: -100px;
+    top: 12px;
+    height: 1px;
+    width: 80px;
+    background-color: black;
+}
+
+/* Landing "scroll" indicator arrow */
+
+.scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+    color: #272727;
+    font-family: 'Noto Sans';
+    font-size: 3em;
+    text-shadow: 0 3px 9px rgba(0,0,0,0.16);
+}
