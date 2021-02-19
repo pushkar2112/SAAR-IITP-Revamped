@@ -56,8 +56,16 @@
     background-color: transparent;
 }
 
-@media screen and (min-width: 768px) {
-    #nav-logo {
+#SAAR-logo-white {
+    display: none;
+    height: 90px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    #SAAR-logo-white {
         display: block;
     }
 }

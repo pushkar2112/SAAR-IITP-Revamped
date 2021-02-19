@@ -1,12 +1,10 @@
 <nav class="navbar">
   <div class="navbar-inner">
     <div class="container-fluid">
-
-      <!-- show logo only when the screen width decreases - TODO-->
-      <div style = "display: none; height: 70px" id = "nav-logo" class="navbar-brand" href="#">
-        <img src="src/img/logo1.png"  alt="white logo" width="100" height="70">
+      <div id="SAAR-logo-white" class="navbar-brand center-block" href="#">
+        <img src="src/img/logo1.png" alt="white logo" width="100" height="70">
       </div>
-      
+
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="50" onclick="this.classList.toggle('active')">
