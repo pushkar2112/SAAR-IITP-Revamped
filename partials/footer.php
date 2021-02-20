@@ -68,7 +68,6 @@
                                 Email - 1801ee63@iitp.ac.in</p>
                         </li>
                     </ul>
-
                 </div>
             </div>
 
@@ -91,7 +90,5 @@
         <!--Grid row-->
     </div>
     <!-- Grid container -->
-
-
 </footer>
 <!-- Footer -->

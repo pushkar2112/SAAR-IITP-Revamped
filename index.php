@@ -5,40 +5,48 @@ session_start();
 <html>
 
 <head>
-    <?php include './partials/head.php' ?>
+
     <title>SAAR (IITP) - Home</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <!-- preconnecting to google fonts to increase loading speed-->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- all style imports -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- bootstrap styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" > <!-- fontawesome -->
+    
+    <!-- all script imports -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script> <!-- jquery -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script><!-- popper.js -->
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    </script><!-- bootstrap js -->
+
+    <!-- all third party imports have to be done before the custom imports -->
+
+    <!-- all custom style imports -->
+    <?php include './partials/head.php' ?>
+
     <link rel="stylesheet" href="./src/css/navbar.css">
-    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
 
-    <!-- temporary preview of the style -->
-    <style>
-        .slider {
-            padding-top: 0px;
-            min-width: 100%;
-            min-height: 100vh;
-            width: 100%;
-            height: 100vh;
-            text-align: center;
-            background: rgb(241, 255, 248);
-            background: linear-gradient(0deg, rgba(241, 255, 248, 1) 0%, rgba(129, 209, 249, 1) 100%);
-        }
-    </style>
+    <link rel="stylesheet" href="./src/css/home_base.css">
 
-
+</head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <div class="slider">
-        <?php include './partials/navbar.php' ?>
-        <!-- preview text -->
-        <h1>SAAR-IITP</h1>
-    </div>
-    <?php include './partials/footer.php' ?>
+
+    <?php include './partials/navbar.php' ?>
+    
     <section class="landing">
         <div class="image-wrapper">
             <div class="box"></div>
@@ -47,8 +55,8 @@ session_start();
         </div>
 
         <div class="logo">
-            <img src="./src/img/logo1.png">
-            <h3>IIT Patna</h3>
+            <img src="./src/img/logo2.png">
+            <h5>IIT Patna</h5>
             <h1>Students' Association for<br>Alumni Relations </h1>
         </div>
         <div class="scroll">↓</div>
@@ -56,10 +64,11 @@ session_start();
     </section>
 
     <section class="about">
-        
+        <h1>ABOUT</h1>
     </section>
 
     <?php include './partials/footer.php'?>
+
 </body>
 
 </html>

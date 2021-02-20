@@ -1,5 +1,4 @@
 <nav class="navbar">
-  <div class="navbar-inner">
     <div class="container-fluid">
       <div id="SAAR-logo-white" class="navbar-brand center-block" href="#">
         <img src="src/img/logo1.png" alt="white logo" width="100" height="70">
@@ -34,6 +33,4 @@
         </ul>
       </div>
     </div>
-  </div>
-
 </nav>
