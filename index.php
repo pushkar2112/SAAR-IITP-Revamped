@@ -39,8 +39,9 @@ session_start();
 
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/footer.css">
-
     <link rel="stylesheet" href="./src/css/home_base.css">
+    <link rel="stylesheet" href="./src/css/form.css">
+
 
 </head>
 <body>
@@ -61,10 +62,11 @@ session_start();
         </div>
         <div class="scroll">↓</div>
 
-    </section>
+        </section>
 
     <section class="about">
         <h1>ABOUT</h1>
+        <button class = "btn mybtn"> Read More </button>
     </section>
 
     <?php include './partials/footer.php'?>
