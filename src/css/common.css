@@ -8,8 +8,8 @@ body{
     overflow-x: hidden;
 }
 
-*{
+* {
     box-sizing: border-box;
-    outline: none;
+    outline: none !important;
     max-width: 100%;
 }

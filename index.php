@@ -39,8 +39,9 @@ session_start();
 
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/footer.css">
-
     <link rel="stylesheet" href="./src/css/home_base.css">
+    <link rel="stylesheet" href="./src/css/form.css">
+
 
 </head>
 <body>
