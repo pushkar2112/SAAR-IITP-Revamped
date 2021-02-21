@@ -59,16 +59,31 @@ session_start();
             <h5>IIT Patna</h5>
             <h1>Students' Association for<br>Alumni Relations </h1>
         </div>
-        <div class="scroll">↓</div>
-
+        <div class="scroll">›</div>
     </section>
 
     <section class="about">
-        <h1>ABOUT</h1>
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus porro quisquam magnam molestiae perferendis, voluptates delectus, optio sed totam a dolorem corrupti pariatur! Nulla voluptate iusto in possimus dolor rerum perferendis consectetur itaque, at obcaecati aliquam. Illo libero omnis, blanditiis possimus ex, velit necessitatibus eaque quis aliquid assumenda vel voluptatem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas, est fugiat amet vitae optio eius! Alias ut harum, maxime adipisci molestias cum. Odio vitae, distinctio in inventore quos expedita!</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery_container">
+            <img class="image active" src="./src/img/slider/1.jpg" data-index="0">
+            <img class="image next" src="./src/img/slider/2.jpg" data-index="1">
+            <img class="image" src="./src/img/slider/3.jpg" data-index="2">
+            <img class="image" src="./src/img/slider/4.jpg" data-index="3">
+            <img class="image prev" src="./src/img/slider/5.jpg" data-index="4">
+        </div>
     </section>
 
     <?php include './partials/footer.php'?>
 
+    <script src="./src/js/carousel.js"></script>
 </body>
 
 </html>

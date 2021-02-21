@@ -10,6 +10,8 @@
 }
 
 section{
+    position: relative;
+    display: block;
     min-height: 100vh;
 }
 
@@ -22,6 +24,15 @@ section{
     align-items: center;
 
     background: linear-gradient(to bottom, #83E1F8, #BBF0FB, #F1FFF8);
+}
+
+/* the scroll down indicator (the arrow) */
+
+.landing .scroll{
+    font-family: 'Montserrat';
+    font-size: 6rem;
+    font-weight: 100;
+    transform: rotate(90deg);
 }
 
 /* Image frame on landing */
@@ -69,7 +80,7 @@ section{
     transform: translate(0, -50%);
     box-shadow: var(--box-shadow-a);
     box-sizing: content-box;
-    clip-path: polygon(-20px 0, calc(100% + 20px) 0, calc(100% + 20px) 100%, -20px 100%);
+    clip-path: polygon(-20px 2px, calc(100% + 20px) 2px, calc(100% + 20px) calc(100% - 2px), -20px calc(100% - 2px));
 }
 
 /* Landing logo area (right part)*/
@@ -123,4 +134,101 @@ section{
     font-family: 'Noto Sans';
     font-size: 3em;
     text-shadow: 0 3px 9px rgba(0,0,0,0.16);
+}
+
+/* about us section */
+.about{
+    min-height: 0;
+}
+
+.about .content{
+    position: relative;
+    left: 50%;
+    width: 90%;
+    padding: 8%;
+    margin: 5% 0;
+    box-shadow: 3px 3px 99px rgba(0,0,0,0.16);
+    transform: translate(-50%, 0);
+    border-radius: 8px;
+}
+
+.about h1{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 0 0 5% 0;
+    padding: 0 0 1.8rem 0;
+    text-align: center;
+    transform: translate(-50%, 0);
+    text-shadow: -1px 3px 6px rgba(0,0,0,0.16);
+}
+
+/* the underline below the heading */
+.about h1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40%;
+    height: 2px;
+    transform: translate(-50%, 0);
+    background-color: #4A4A4A;
+    box-shadow: -1px 3px 6px rgba(0,0,0,0.16);
+}
+
+.about p{
+    letter-spacing: 0.15rem;
+    line-height: 2.5rem;
+    color: rgba(0,0,0,0.6);
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+/* gallery section */
+.gallery h1{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 5% 0 2% 0;
+    transform: translate(-50%, 0);
+}
+
+.gallery_container{
+    display: flex;
+    width: 100%;
+    padding: 3% 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.gallery_container .image{
+    display: none;
+    position: relative;
+    height: min(60vh, calc(0.56 * 80vw));
+    width: auto;
+    margin: 0;
+    box-shadow: 0 15px 27px rgba(0,0,0,0.16);
+    transition: 0.3s;
+}
+
+.gallery_container .active{
+    display: inline-block;
+}
+
+.gallery_container .prev,
+.gallery_container .next{
+    display: inline-block;
+    cursor: pointer;
+    transform: scale(0.85);
+    opacity: 0.75;
+}
+
+.gallery_container .prev:hover,
+.gallery_container .next:hover{
+    transform: scale(0.87);
+    opacity: 0.85;
 }
