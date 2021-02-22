@@ -1,3 +1,5 @@
+/* Homepage Button */
+
 .mybtn {
     display: block;
     position: relative;
@@ -52,4 +54,184 @@
 
 .mybtn:focus {
     color: white;
+}
+
+
+/* Label */
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500 !important;
+}
+
+
+/* Input */
+
+.form-group {
+    position: relative;
+}
+
+input[type=email],
+input[type=text],
+input[type=password] {
+    position: relative;
+    border-radius: 0px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    box-shadow: none;
+    transition: background 1s;
+}
+
+input[type=email]:focus,
+input[type=text]:focus,
+input[type=password]:focus {
+    background: hsl(196, 66%, 94%);
+}
+
+input[type=email]::placeholder,
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+    color: transparent;
+}
+
+.form-label-name {
+    position: absolute;
+    transform: translate(0, 0, 0);
+    top: 50%;
+    left: 0%;
+    transform: translate(10px, -50%);
+    transition-duration: 0.2s;
+    color: gray;
+}
+
+:not(:placeholder-shown)~.form-label-name {
+    color: gray;
+    top: -50%;
+    left: 0%;
+    transform: scale(0.75);
+}
+
+input:focus~.form-label-name {
+    color: #358ee1;
+    top: -50%;
+    left: 0%;
+    transform: scale(0.75);
+}
+
+
+/* Checkbox */
+
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 8px;
+    }
+    50% {
+        height: 14px;
+        width: 8px;
+    }
+}
+
+.checkbox {
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 .25em;
+    border-radius: 4px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+}
+
+.checkbox span {
+    display: block;
+    position: relative;
+    padding: 0
+}
+
+.checkbox span:after {
+    -moz-transform: scaleX(-1) rotate(135deg);
+    -ms-transform: scaleX(-1) rotate(135deg);
+    -webkit-transform: scaleX(-1) rotate(135deg);
+    transform: scaleX(-1) rotate(135deg);
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-right: 4px solid transparent;
+    border-top: 4px solid transparent;
+    content: '';
+    display: block;
+    height: 14px;
+    left: 0px;
+    position: absolute;
+    top: 5px;
+    width: 8px;
+}
+
+.checkbox input {
+    display: none
+}
+
+.checkbox input:checked+span:after {
+    -webkit-animation: check .8s;
+    -moz-animation: check .8s;
+    -o-animation: check .8s;
+    animation: check .8s;
+    border-color: #555
+}
+
+.checkbox input:checked+.default:after {
+    border-color: #444;
+}
+
+
+/* Button */
+
+button.btn-ripple {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4facfb;
+    color: white;
+}
+
+button.btn-ripple:active,
+button.btn-ripple:focus,
+button.btn-ripple:hover {
+    color: white;
+}
+
+button.btn-ripple::after {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+}
+
+button.btn-ripple:active:after {
+    animation: ripple;
+    animation-duration: 1s;
+}
+
+@keyframes ripple {
+    from {
+        opacity: 0.4;
+        transform: scale(0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1, 1);
+    }
 }
