@@ -1,4 +1,4 @@
-.mybtn {
+.btn-3d {
     display: block;
     position: relative;
     top: 0;
@@ -14,7 +14,7 @@
     transition: 0.3s;
 }
 
-.mybtn::before {
+.btn-3d::before {
     content: '';
     display: block;
     position: absolute;
@@ -27,29 +27,29 @@
     z-index: -1;
 }
 
-.mybtn:hover {
+.btn-3d:hover {
     top: -2.5px;
     left: -2.5px;
     color: white;
 }
 
-.mybtn:hover::before {
+.btn-3d:hover::before {
     top: 15px;
     left: 15px;
     z-index: -1;
 }
 
-.mybtn:active {
+.btn-3d:active {
     top: 5px;
     left: 5px;
     color: white;
 }
 
-.mybtn:active::before {
+.btn-3d:active::before {
     top: 0;
     left: 0;
 }
 
-.mybtn:focus {
+.btn-3d:focus {
     color: white;
 }

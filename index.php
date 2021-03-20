@@ -39,8 +39,9 @@ session_start();
 
     <link rel="stylesheet" href="./src/css/navbar.css">
     <link rel="stylesheet" href="./src/css/footer.css">
-    <link rel="stylesheet" href="./src/css/home_base.css">
     <link rel="stylesheet" href="./src/css/form.css">
+    
+    <link rel="stylesheet" href="./src/css/home_base.css">
 
 
 </head>
@@ -80,6 +81,13 @@ session_start();
             <img class="image" src="./src/img/slider/4.jpg" data-index="3">
             <img class="image prev" src="./src/img/slider/5.jpg" data-index="4">
         </div>
+    </section>
+
+    <section class="newsletter"> <!-- TODO -->
+        <h1>Newsletter</h1>
+        <!-- <div class="newsletter_container">
+            <a href="public/anusmriti/vol3/issue1.pdf" target="_blank"><img class="image active" src="./src/img/slider/1.jpg"></a>
+        </div> -->
     </section>
 
     <?php include './partials/footer.php'?>

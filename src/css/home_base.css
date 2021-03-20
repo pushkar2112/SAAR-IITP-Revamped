@@ -134,6 +134,36 @@ section{
     text-shadow: 0 3px 9px rgba(0, 0, 0, 0.16);
 }
 
+/* section headings - common styles */
+.about h1,
+.gallery h1,
+.newsletter h1{
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    margin: 5% 0 2% 0;
+    padding: 0 0 1.8rem 0;
+    text-align: center;
+    text-shadow: -1px 3px 6px rgba(0,0,0,0.16);
+    transform: translate(-50%, 0);
+}
+
+/* the underline below the section headings */
+.about h1::after,
+.gallery h1::after,
+.newsletter h1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 40%;
+    height: 2px;
+    transform: translate(-50%, 0);
+    background-color: #4A4A4A;
+    box-shadow: -1px 3px 6px rgba(0,0,0,0.16);
+}
+
 /* about us section */
 .about{
     min-height: 0;
@@ -151,28 +181,7 @@ section{
 }
 
 .about h1{
-    display: inline-block;
-    position: relative;
-    left: 50%;
     margin: 0 0 5% 0;
-    padding: 0 0 1.8rem 0;
-    text-align: center;
-    transform: translate(-50%, 0);
-    text-shadow: -1px 3px 6px rgba(0,0,0,0.16);
-}
-
-/* the underline below the heading */
-.about h1::after{
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 40%;
-    height: 2px;
-    transform: translate(-50%, 0);
-    background-color: #4A4A4A;
-    box-shadow: -1px 3px 6px rgba(0,0,0,0.16);
 }
 
 .about p{
@@ -184,16 +193,9 @@ section{
     text-align: justify;
 }
 
-/* gallery section */
-.gallery h1{
-    display: inline-block;
-    position: relative;
-    left: 50%;
-    margin: 5% 0 2% 0;
-    transform: translate(-50%, 0);
-}
-
-.gallery_container{
+/* gallery section  +  newsletter section*/
+.gallery_container,
+.newsletter_container{
     display: flex;
     width: 100%;
     padding: 3% 0;
@@ -203,7 +205,8 @@ section{
     flex-wrap: nowrap;
 }
 
-.gallery_container .image{
+.gallery_container .image,
+.newsletter_container .image{
     display: none;
     position: relative;
     height: min(60vh, calc(0.56 * 80vw));
@@ -213,12 +216,15 @@ section{
     transition: 0.3s;
 }
 
-.gallery_container .active{
+.gallery_container .active,
+.newsletter_container .active{
     display: inline-block;
 }
 
 .gallery_container .prev,
-.gallery_container .next{
+.gallery_container .next,
+.newsletter_container .prev,
+.newsletter_container .next{
     display: inline-block;
     cursor: pointer;
     transform: scale(0.85);
@@ -226,7 +232,11 @@ section{
 }
 
 .gallery_container .prev:hover,
-.gallery_container .next:hover{
+.gallery_container .next:hover,
+.newsletter_container .prev:hover,
+.newsletter_container .next:hover{
     transform: scale(0.87);
     opacity: 0.85;
 }
+
+/* newsletter section (specific styles) */
