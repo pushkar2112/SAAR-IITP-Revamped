@@ -1,0 +1,340 @@
+.bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-size: cover
+    background-repeat: no-repeat
+
+.home
+    position: relative
+    width: 100%
+    height: 100vh
+    overflow: hidden;
+
+    .bg
+        background-position: 40% 0
+
+    .logo
+        position: absolute
+        top: 5%
+        left: 50%
+        height: 9.5vh
+        transform: translate(-50%, 0)
+        opacity: 0.8
+
+    .main
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-transform: uppercase
+        text-align: center
+
+        h1
+            font-family: "Garamond"
+            font-size: 5rem
+            font-weight: 600
+            word-spacing: 6rem
+            line-height: 5rem
+            text-shadow: 0 2px 30px rgba(0,0,0,1)
+        
+        h5
+            margin-right: -0.45rem
+            font-size: 0.75rem
+            font-weight: 600
+            letter-spacing: 0.45rem
+            line-height: 1.5rem
+            text-shadow: 0 2px 6px rgba(0,0,0,1)
+
+    .scroll-indic
+        position: absolute
+        left: 50%
+        bottom: 5%
+        height: 15px
+        transform: translate(-50%, -30px)
+        opacity: 0
+        transition: all 0.3s 0.3s ease-in-out
+
+.about
+    display: flex
+    position: relative
+    width: 100%
+    min-height: 120vh
+    align-items: center
+    padding: 0vh 25%
+    overflow: hidden
+
+    .bg
+        background-position: center
+
+    .main
+        position: relative
+        max-width: 800px
+        transform: translate(0, -5vh)
+    
+    h1
+        display: inline-block
+        position: relative
+        font-family: "Garamond"
+        font-size: 4rem
+        font-weight: normal
+        margin-bottom: 3rem
+        text-shadow: -3px 2px 14px rgb(0, 0, 0)
+
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: -45px
+            width: 80px
+            height: 2px
+            background-color: rgb(255, 255, 255)
+            box-shadow: -3px 2px 14px rgb(0, 0, 0)
+
+    p
+        font-size: 0.9rem
+        font-weight: 200
+        text-align: justify
+        letter-spacing: 0.2rem
+        line-height: 1.6rem
+        text-shadow: 0 3px 6px rgb(0, 0, 0)
+
+    .cubes
+        display: block
+        position: absolute
+        width: 30vh
+    
+        &.top-left
+            top: 0
+            left: 0
+            transform: scale(-1,-1) translate(1vh, 1vh)
+            opacity: 0.1
+        
+        &.bottom-right
+            top: 0
+            right: 0
+            opacity: 0.08
+            transform: translate(0, 80vh)
+
+
+.gallery
+    position: relative
+    width: 100%
+    height: 60vh
+    padding: 0 20%
+    background-size: cover
+    background-position: center 30%
+
+    .main
+        display: inline-block
+        position: relative
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        text-transform: uppercase
+        text-align: center
+
+        h1
+            display: block
+            position: relative
+            padding: 1rem 4rem
+            font-family: "Garamond"
+            font-size: 3rem
+            font-weight: 600
+            word-spacing: 2rem
+            line-height: 3rem
+            text-shadow: 0 2px 22px rgba(0, 0, 0, 1)
+            border: 5px solid rgb(255, 255, 255)
+        
+        .more
+            display: inline-flex
+            position: relative
+            float: right
+            padding: 1rem 2rem
+            transform: translateY(-0.5px)
+            background-color: rgb(255, 255, 255)
+            overflow: hidden
+            transition: background-color 0.3s ease-out
+
+            .text
+                display: inline-block
+                position: relative
+                left: 0
+                font-family: "Garamond"
+                font-size: 0.8rem
+                color: rgb(36, 36, 36)
+                letter-spacing: 0.25rem
+                text-transform: capitalize
+                transition: left 0.3s ease-in-out
+
+            .arrow
+                display: inline-block
+                position: absolute
+                top: 50%
+                left: 150%
+                height: 0.94rem
+                transform: translate(-50%, -50%)
+                transition: left 0.3s ease-in-out
+                opacity: 0.8
+            
+            &:hover
+                background-color: rgb(0, 25, 25) 
+
+            &:hover .text
+                left: -200%
+
+            &:hover .arrow
+                left: 50%
+
+.timeline
+    display: flex
+    position: relative
+    width: 100%
+    min-height: 100vh
+    padding: 15% 20%
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    overflow: hidden
+
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 3vw
+        height: 100%
+        max-width: 30px
+        background-image: url('../assets/images/rectC.svg')
+
+    .main
+        position: relative
+        width: 100%
+    
+        h1
+            display: inline-block
+            position: relative
+            font-family: "Garamond"
+            font-size: 4rem
+            font-weight: normal
+            margin-bottom: 3rem
+            text-shadow: -3px 2px 14px rgb(0, 0, 0)
+
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                left: -45px
+                width: 80px
+                height: 2px
+                background-color: rgb(255, 255, 255)
+                box-shadow: -3px 2px 14px rgb(0, 0, 0)
+        
+    .wrapper
+        display: flex
+        padding: 5% 0 0 5%
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+
+    .event
+        display: grid
+        grid-template-columns: auto auto
+        margin: 10vh 0 10vh 0
+
+        .marker
+            display: inline-block
+            position: relative
+            width: 20px
+            height: 20px
+            margin-right: 6vw
+            align-self: center
+            justify-self: left
+            border: 3px solid rgb(255, 255, 255)
+            border-radius: 100%
+
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                top: 50%
+                left: calc(100% + 3px)
+                width: 0
+                height: 2px
+                background-color: rgb(255, 255, 255)
+                transform: translate(0, -50%)
+                transition: width 0.2s ease-out
+        
+        &.active .marker::after
+            width: 4vw
+        
+        .title
+            justify-self: start
+            font-size: 1.5rem
+            letter-spacing: 1.2rem
+        
+        .desc
+            justify-self: start
+            max-width: 500px
+            padding: 5% 0 0 10%
+            grid-column: 2 / 3
+            font-size: 0.9rem
+            font-weight: 200
+            text-align: justify
+            letter-spacing: 0.2rem
+            line-height: 1.6rem
+    
+    .more
+        display: flex
+        align-items: center
+        float: right
+        padding: 15% 0 0 0
+
+        .text
+            display: inline-block
+            font-family: "Garamond"
+            font-size: 0.8rem
+            color: rgb(255, 255, 255)
+            letter-spacing: 0.25rem
+            text-transform: capitalize
+
+        .arrow
+            display: inline-block
+            height: 0.94rem
+            margin: 0 1rem
+            opacity: 0.8
+
+        &:hover .text
+            text-decoration: underline
+
+    .cubes
+        display: block
+        position: absolute
+        width: 30vh
+        user-select: none
+
+        &.top-right
+            top: 0
+            right: 0
+            width: 60vh
+            transform: translate(1vh, -5vh)
+            opacity: 0.06
+
+        &.bottom-left
+            top: 0
+            left: 0
+            transform: scale(-1,1) translate(-30px, 85vh)
+            opacity: 0.08
+        
+        &.bottom-right
+            top: 0
+            right: 0
+            transform: translate(0, 95vh)
+            opacity: 0.1
+
+// anusmriti section

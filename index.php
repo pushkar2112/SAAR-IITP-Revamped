@@ -25,17 +25,12 @@ session_start();
 
     <link rel="stylesheet" href="src/css/home.min.css">
 
-    <script src="src/js/parallax.min.js"></script>
+    <script src="src/js/rellax.min.js"></script>
 </head>
 <body>
     
-    <section class="home">
-        <div class="bg parallax-window"
-            data-parallax="scroll"
-            data-image-src="./src/assets/images/bgA.jpg"
-            data-speed="0.3"
-            data-bleed="0">
-        </div>
+    <section class="home parent">
+        <div class="bg parallax" data-src="./src/assets/images/bgA.jpg" data-rellax-speed="-3"></div>
 
         <img src="./src/assets/images/logo1.png" class="logo">
         <div class="main">
@@ -46,12 +41,8 @@ session_start();
         <img src="./src/assets/images/next.svg" class="scroll-indic">
     </section>
 
-    <section class="about">
-        <div class="bg parallax-window"
-            data-parallax="scroll"
-            data-image-src="./src/assets/images/rectA.svg"
-            data-speed="0.3">
-        </div>
+    <section class="about parent">
+        <div class="bg parallax" data-src="./src/assets/images/rectA.svg" data-rellax-speed="-3"></div>
 
         <img src="./src/assets/images/cubes.svg" class="cubes top-left">
         <div class="main">
@@ -62,13 +53,8 @@ session_start();
 
     </section>
 
-    <section class="gallery">
-        <div class="bg parallax-window"
-            data-parallax="scroll"
-            data-image-src="./src/assets/images/gconvo-dark.jpg"
-            data-speed="0.3"
-            data-bleed="0">
-        </div>
+    <section class="gallery parent">
+        <div class="bg parallax" data-src="./src/assets/images/gconvo-dark.jpg" data-rellax-speed="-3"></div>
 
         <div class="main">
             <h1>G a l l e r y</h1>
@@ -79,12 +65,8 @@ session_start();
         </div>
     </section>
 
-    <section class="timeline">
-        <div class="bg parallax-window"
-            data-parallax="scroll"
-            data-image-src="./src/assets/images/rectB.svg"
-            data-speed="0.3">
-        </div>
+    <section class="timeline parent">
+        <div class="bg parallax" data-src="./src/assets/images/rectB.svg" data-rellax-speed="-3"></div>
 
         <img src="./src/assets/images/cubes2.svg" class="cubes top-right">
 
@@ -117,7 +99,7 @@ session_start();
         <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
     </section>
 
-    <section class="anusmriti"></section>
+    <section class="anusmriti parent"></section>
 
     <?php include getcwd() . '/partials/footer.php'?>
     <script src="src/js/home.js"></script>
