@@ -1,20 +1,43 @@
-.bg
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    background-size: cover
-    background-repeat: no-repeat
+// css based parallax
+// this is great. so smooth...
+html
+    overflow: hidden
 
+body
+    height: 100vh
+    perspective: 1px;
+    perspective-origin: 50%;
+    transform-style: preserve-3d;
+
+.bg__parallax
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 100vw
+    height: 150%
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    transform: translate3d(-50%, -50%, -1px) scale(2.03)
+
+
+.home .bg__parallax,
+.gallery .bg__parallax,
+.anusmriti .bg__parallax
+    z-index: -5
+
+.about .bg__parallax,
+.timeline .bg__parallax
+    z-index: -4
+
+// home section
+// here i didn't use a flexbox because there were just 3 elements to center
+// and there were offsets that needed explicit definition so flexbox would've just been pointless
 .home
     position: relative
     width: 100%
     height: 100vh
-    overflow: hidden;
-
-    .bg
-        background-position: 40% 0
+    overflow: hidden
 
     .logo
         position: absolute
@@ -25,7 +48,7 @@
         opacity: 0.8
 
     .main
-        position: relative
+        position: absolute
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
@@ -61,13 +84,10 @@
     display: flex
     position: relative
     width: 100%
-    min-height: 120vh
+    height: 120vh
     align-items: center
     padding: 0vh 25%
     overflow: hidden
-
-    .bg
-        background-position: center
 
     .main
         position: relative
@@ -119,14 +139,11 @@
             opacity: 0.08
             transform: translate(0, 80vh)
 
-
 .gallery
     position: relative
     width: 100%
     height: 60vh
     padding: 0 20%
-    background-size: cover
-    background-position: center 30%
 
     .main
         display: inline-block
@@ -210,6 +227,7 @@
         height: 100%
         max-width: 30px
         background-image: url('../assets/images/rectC.svg')
+        z-index: 1
 
     .main
         position: relative
@@ -235,7 +253,7 @@
                 background-color: rgb(255, 255, 255)
                 box-shadow: -3px 2px 14px rgb(0, 0, 0)
         
-    .wrapper
+    .evnet__container
         display: flex
         padding: 5% 0 0 5%
         flex-direction: column
@@ -336,5 +354,3 @@
             right: 0
             transform: translate(0, 95vh)
             opacity: 0.1
-
-// anusmriti section
