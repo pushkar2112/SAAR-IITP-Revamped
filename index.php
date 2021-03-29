@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="src/css/home.min.css">
 
 </head>
+
 <body>
     <section class="home">
         <!-- parallax background image container -->
@@ -103,8 +104,15 @@
     </section>
 
 
-    <section class="anusmriti">
-    <!-- to do -->
+    <section class="anusmriti parent">
+        <div class="sliding-background"></div>
+        <div class="wrapper">
+            <h1>A N U S M R I T I</h1>
+            <a href="#" class="more">
+                <span class="text">See More</span>
+                <img src="./src/assets/images/arrow-black-small.svg" class="arrow">
+            </a>
+        </div>
     </section>
 
     <?php include getcwd() . '/partials/footer.php'?>

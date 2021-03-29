@@ -297,3 +297,91 @@ section
         left: 0
         transform: scale(-1,1) translate(0, 75vh)
         opacity: 0.08
+
+.anusmriti 
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    overflow: hidden
+
+    .sliding-background
+        $img-width: 3720px
+        $img-height: 1754px
+        width: calc(($img-width / 3) * 3)
+        height: calc($img-height / 3)
+        background: linear-gradient(rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125)), url("../assets/images/anusmriti-covers.png") repeat-x
+        background-size: contain
+        animation: slide 60s linear infinite
+        
+    
+    @keyframes slide 
+        0% 
+            transform: translateX(0)
+        100% 
+            transform: translateX(calc(-1*(var(--img-width)) / 3))
+    
+    .wrapper 
+        position: absolute
+        padding: 5%
+        width: fit-content
+        height: fit-content
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    
+        h1
+            width: fit-content
+            height: 100%
+            padding: 1rem 4rem
+            font-family: "Garamond"
+            font-size: 3rem
+            font-weight: 600 
+            word-spacing: 2rem
+            line-height: 3rem
+            background-color: white
+            color: black
+            box-shadow: 4px 9px 50px 0px #888888
+            text-shadow: -2px 5px 35px
+        
+        .more
+            display: inline-flex
+            position: relative
+            align-self: flex-end
+            padding: 1rem 2rem
+            transform: translateY(-0.5px)
+            background-color: rgb(36, 36, 36)
+            overflow: hidden
+            transition: background-color 0.3s ease-out
+
+            .text
+                display: inline-block
+                position: relative
+                left: 0
+                font-family: "Garamond"
+                font-size: 0.8rem
+                color: white
+                letter-spacing: 0.25rem
+                text-transform: capitalize
+                transition: left 0.3s ease-in-out
+
+            .arrow
+                display: inline-block
+                position: absolute
+                top: 50%
+                left: 150%
+                height: 0.94rem
+                transform: translate(-50%, -50%)
+                transition: left 0.3s ease-in-out
+                opacity: 0.8
+            
+            &:hover
+                background-color: white
+
+            &:hover .text
+                left: -200%
+
+            &:hover .arrow
+                left: 50%
