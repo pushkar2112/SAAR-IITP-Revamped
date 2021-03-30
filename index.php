@@ -105,14 +105,7 @@
 
 
     <section class="anusmriti parent">
-        <div class="sliding-background"></div>
-        <div class="wrapper">
-            <h1>A N U S M R I T I</h1>
-            <a href="#" class="more">
-                <span class="text">See More</span>
-                <img src="./src/assets/images/arrow-black-small.svg" class="arrow">
-            </a>
-        </div>
+    <!-- to do -->
     </section>
 
     <?php include getcwd() . '/partials/footer.php'?>

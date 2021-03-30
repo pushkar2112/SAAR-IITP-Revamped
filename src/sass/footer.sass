@@ -1,33 +1,138 @@
+@import '_mixins'
+
 .footer
     position: relative
     width: 100%
-    padding: 0 25%
+    padding: 15vh 20vh 25vh 20vh
+    background-color: rgb(0, 26, 26)
     overflow: hidden
 
     .logo
-        position: absolute
-        top: 5%
-        left: 10%
         height: 9.5vh
+        margin-bottom: 55px
         opacity: 0.8
 
     .social
+        display: flex
+        width: 100%
+        max-width: 280px
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 5vh
+
         .icon
             display: inline-block
+            position: relative
             width: 30px
             height: 30px
         
         .icon img
             width: 100%
             height: 100%
+        
+        span
+            display: block
+            @include position_and("center auto")
+            top: calc(-100% + 5px)
+            padding: 4px 9px
+            color: rgb(0, 26, 26)
+            font-size: 0.9rem
+            font-weight: 600
+            background-color: white
+            border-radius: 4px
+            transition: all 0.2s ease-in-out
+            opacity: 0
+            pointer-events: none
+        
+        span::after
+            content: ''
+            display: block
+            @include position_and("center auto")
+            top: 100%
+            width: 0
+            height: 0
+            border: 6px solid transparent
+            border-top-color: white
+        
+        .icon:hover span
+            top: calc(-100% - 10px)
+            opacity: 1
+    
+    .ext-links
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+
+    .main
+        display: flex
+        width: 100%
+        margin-left: 50px
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        font-family: "Garamond"
+
+        .link
+            display: inline-block
+            position: relative
+            font-size: 1rem
+            font-weight: 600
+            text-align: justify
+            font-style: italic
+            letter-spacing: 0.18rem
+            line-height: 1.4rem
+
+        .link::after
+            content: ''
+            display: block
+            position: absolute
+            left: 0
+            bottom: -1px
+            width: 0
+            height: 1px
+            background-color: white
+            transition: width 0.2s ease
+            opacity: 0.8
+
+        .link:hover::after
+            width: 100%
+        
+        .link + .link
+            margin-top: 10px
+    
+        .sep
+            display: block
+            width: 15px
+            height: 1px
+            margin: 25px 0
+            background-color: white
+            opacity: 0.2
+        
+        .contact
+            p
+                font-size: 1rem
+                font-weight: 200
+                text-align: justify
+                letter-spacing: 0.18rem
+                line-height: 1.6rem
+
+            p + p
+                margin-top: 30px
 
     .cubes
-        display: block
         position: absolute
         width: 30vh
 
         &.top-left
             top: 0
             left: 0
-            transform: scale(-1,-1) translate(1vh, 1vh)
+            transform: scale(-1,-1) translate(20%, 30%)
             opacity: 0.1
+
+    .bg-logo
+        position: absolute
+        right: 0
+        bottom: 0
+        height: 85%
+        opacity: 0.04

@@ -7,13 +7,13 @@ $('body').ready(() => {
     // [[ i just toggled a class so that
     // it can be easier to change the animations later ]]
 
-    $('.link').mouseenter((e) => {
-        $('.link').addClass('unfocus');
+    $('.navbar .link').mouseenter((e) => {
+        $('.navbar .link').addClass('unfocus');
         $(e.target).removeClass('unfocus');
     });
 
     $('.navbar').mouseleave(() => {
-        $('.link').removeClass('unfocus');
+        $('.navbar .link').removeClass('unfocus');
     });
 
 });

@@ -21,10 +21,4 @@ body
     background-position: center
     background-repeat: no-repeat
     transform: translate3d(-50%, -50%, -1px) scale(2)
-
-// this parts controls the overlapping of backgrounds ... z-index :)
-$orders: ('.home': -5, '.about': -4, '.gallery': -5, '.timeline': -4, '.anusmriti': -5)
-
-@each $section, $order in $orders
-    #{$section} .bg-parallax
-        z-index: $order
+    z-index: -5
