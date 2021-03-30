@@ -1,5 +1,27 @@
 $('body').ready(() => {
 
+    enable__smoothscroll();
+
+    // hover aimation triggers
+
+    // [[ i just toggled a class so that
+    // it can be easier to change the animations later ]]
+
+    $('.navbar .link').mouseenter((e) => {
+        $('.navbar .link').addClass('unfocus');
+        $(e.target).removeClass('unfocus');
+    });
+
+    $('.navbar').mouseleave(() => {
+        $('.navbar .link').removeClass('unfocus');
+    });
+
+});
+
+
+function enable__smoothscroll() {
+    
+    // code for smooth-scrolling
     const root = $('html, body');
     $(document).on('click', 'a[data-href]', function (event) {
         event.preventDefault();
@@ -9,13 +31,7 @@ $('body').ready(() => {
         }, 500);
     });
 
-    $('.link').mouseenter((e) => {
-        $('.link').css({'opacity': 0.6});
-        $(e.target).css({'opacity': 1});
-    });
-
-    $('.navbar').mouseleave(() => {
-        $('.link').css({'opacity': 1});
-    });
-
-});
+    
+    // [[ could've used css for this but i was
+    // making sure tha it works on all browsers ]]
+}

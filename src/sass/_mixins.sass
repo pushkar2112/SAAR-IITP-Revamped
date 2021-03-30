@@ -1,0 +1,15 @@
+@mixin position_and($position, $args: "", $type: "absolute")
+    position: #{$type}
+
+    @if $position == "center center"
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) #{$args}
+
+    @else if $position == "auto center"
+        top: 50%
+        transform: translateY(-50%) #{$args}
+
+    @else if $position == "center auto"
+        left: 50%
+        transform: translateX(-50%) #{$args}
