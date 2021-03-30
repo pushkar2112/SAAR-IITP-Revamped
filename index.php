@@ -27,94 +27,107 @@ session_start();
 
 <body>
     <!-- <div class="wrapper__view"> -->
-        <section class="home">
+    <section class="home">
 
-            <div class="bg__parallax" data-src="./src/assets/images/bgA.jpg"></div>
+        <div class="bg__parallax" data-src="./src/assets/images/bgA.jpg"></div>
 
-            <img src="./src/assets/images/logo1.png" class="logo">
-            <div class="main">
-                <h1>S A A R</h1>
-                <h5>Students' Association for Alumni Relations</h5>
-                <?php include getcwd() . '/partials/navbar.php' ?>
-            </div>
-            <img src="./src/assets/images/next.svg" class="scroll-indic">
+        <img src="./src/assets/images/logo1.png" class="logo">
+        <div class="main">
+            <h1>S A A R</h1>
+            <h5>Students' Association for Alumni Relations</h5>
+            <?php include getcwd() . '/partials/navbar.php' ?>
+        </div>
+        <img src="./src/assets/images/next.svg" class="scroll-indic">
 
-        </section>
+    </section>
 
-        <section class="about">
+    <section class="about">
 
-            <div class="bg__parallax" data-src="./src/assets/images/rectA.svg"></div>
+        <div class="bg__parallax" data-src="./src/assets/images/rectA.svg"></div>
 
-            <img src="./src/assets/images/cubes.svg" class="cubes top-left">
-            <div class="main">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi incidunt deserunt fugit aliquid dignissimos iure commodi tenetur quis aperiam placeat doloremque labore vitae porro voluptate itaque, sint cum numquam dicta ratione adipisci consequatur. Molestiae, aut ex mollitia nisi, dolor a exercitationem laudantium deserunt atque optio debitis voluptate dolorem quod! Ducimus quisquam, delectus rem saepe et culpa quos animi esse dolor incidunt recusandae magni aut minima porro accusantium nesciunt vel velit autem amet, ratione distinctio? Sit optio natus id praesentium?</p>
-            </div>
-            <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
+        <img src="./src/assets/images/cubes.svg" class="cubes top-left">
+        <div class="main">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi incidunt deserunt fugit aliquid dignissimos iure commodi tenetur quis aperiam placeat doloremque labore vitae porro voluptate itaque, sint cum numquam dicta ratione adipisci consequatur. Molestiae, aut ex mollitia nisi, dolor a exercitationem laudantium deserunt atque optio debitis voluptate dolorem quod! Ducimus quisquam, delectus rem saepe et culpa quos animi esse dolor incidunt recusandae magni aut minima porro accusantium nesciunt vel velit autem amet, ratione distinctio? Sit optio natus id praesentium?</p>
+        </div>
+        <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
 
-        </section>
+    </section>
 
-        <section class="gallery">
+    <section class="gallery">
 
-            <div class="bg__parallax" data-src="./src/assets/images/gconvo-dark.jpg"></div>
+        <div class="bg__parallax" data-src="./src/assets/images/gconvo-dark.jpg"></div>
 
-            <div class="main">
-                <h1>G a l l e r y</h1>
-                <a href="#" class="more">
-                    <span class="text">See More</span>
-                    <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
-                </a>
-            </div>
-
-        </section>
-
-        <section class="timeline">
-
-            <div class="bg__parallax" data-src="./src/assets/images/rectB.svg"></div>
-
-            <img src="./src/assets/images/cubes2.svg" class="cubes top-right">
-            <div class="main">
-                <h1>Timeline</h1>
-                <div class="event__container">
-                    <div class="event">
-                        <div class="marker"></div>
-                        <p class="title">Event A</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci maiores odio quam rerum sed incidunt voluptas id soluta qui voluptates harum nesciunt, ipsam aliquid</p>
-                    </div>
-                    <div class="event">
-                        <div class="marker"></div>
-                        <p class="title">Event A</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci maiores odio quam rerum sed incidunt voluptas id soluta qui voluptates harum nesciunt, ipsam aliquid</p>
-                    </div>
-                    <div class="event">
-                        <div class="marker"></div>
-                        <p class="title">Event A</p>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci maiores odio quam rerum sed incidunt voluptas id soluta qui voluptates harum nesciunt, ipsam aliquid</p>
-                    </div>
-                </div>
-                <a href="#" class="more">
-                    <span class="text">See More</span>
-                    <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
-                </a>
-            </div>
-            <img src="./src/assets/images/cubes.svg" class="cubes bottom-left">
-            <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
-
-        </section>
-
-    <section class="anusmriti parent">
-        <div class="sliding-background"></div>
-        <div class="wrapper">
-            <h1>A N U S M R I T I</h1>
+        <div class="main">
+            <h1>G a l l e r y</h1>
             <a href="#" class="more">
                 <span class="text">See More</span>
-                <img src="./src/assets/images/arrow-black-small.svg" class="arrow">
+                <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
             </a>
         </div>
+
+    </section>
+
+    <section class="timeline">
+
+        <div class="bg__parallax" data-src="./src/assets/images/rectB.svg"></div>
+
+        <img src="./src/assets/images/cubes2.svg" class="cubes top-right">
+        <div class="main">
+            <h1>Timeline</h1>
+            <div class="event__container">
+                <div class="event">
+                    <div class="marker"></div>
+                    <p class="title">Event A</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci maiores odio quam rerum sed incidunt voluptas id soluta qui voluptates harum nesciunt, ipsam aliquid</p>
+                </div>
+                <div class="event">
+                    <div class="marker"></div>
+                    <p class="title">Event A</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci maiores odio quam rerum sed incidunt voluptas id soluta qui voluptates harum nesciunt, ipsam aliquid</p>
+                </div>
+                <div class="event">
+                    <div class="marker"></div>
+                    <p class="title">Event A</p>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci maiores odio quam rerum sed incidunt voluptas id soluta qui voluptates harum nesciunt, ipsam aliquid</p>
+                </div>
+            </div>
+            <a href="#" class="more">
+                <span class="text">See More</span>
+                <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
+            </a>
+        </div>
+        <img src="./src/assets/images/cubes.svg" class="cubes bottom-left">
+        <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
+
+    </section>
+
+
+    <section class="anusmriti parent">
+
+        <div class="cover-carousel">
+            <img class="cover-slide prev" src="src/assets/images/anusmriti-covers/2.1.jpg">
+            <img class="cover-slide current" src="src/assets/images/anusmriti-covers/3.1.jpg">
+            <img class="cover-slide next" src="src/assets/images/anusmriti-covers/2.2.jpg">
+        </div>
+
+        <img src="./src/assets/images/cubes.svg" class="cubes top-left">
+        <div class="main">
+            <h1>Anusmriti</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2 class="issue-text">Vol. 3 - Issue 1</h2>
+
+            <a href="#" class="more">
+                <span class="text">Read Now</span>
+                <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
+            </a>
+        </div>
+        <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
     </section>
 
     <!-- <?php include getcwd() . '/partials/footer.php' ?> -->
     <script src="src/js/home.js"></script>
+    <script src="src/js/anusmriti.js"></script>
 </body>
 
 </html>
