@@ -321,73 +321,73 @@ section
             opacity: 0.1
 
 .anusmriti
-    display: flex
-    flex-direction: row
-    justify-content: left
+    display: grid
+    grid-template-areas: "carousel text"
+    grid-template-columns: 70% 30%
     position: relative
     width: 100%
-    height: 100vh
-    align-items: center
+    height: fit-content
     padding: 2%  
-    overflow: hidden
     background-color: #002020
 
     .cover-carousel
+        grid-area: carousel
         position: relative
         height: 100%
-        width: 70%
+        width: 100%
         margin: 10px 
-        min-width: 300px
         display: flex
         flex-direction: row
         justify-content: center
         align-items: center
-        min-width: 750px
-        
 
         .cover-slide
-            --img-width: 1240px
-            --img-height: 1754px
-            border: solid
-            transition-duration: 1s
+            height: 0px
+            width: 0px
+            position: relative
+            z-index: 1
+            opacity: 0
+            cursor: pointer
+            pointer-events: none
+            transition: 1s
             
         
-        .current
-            width: calc(var(--img-width) / 4) 
-            height: calc(var(--img-height) / 4)
-            z-index: 10
+        .active
+            height: 100%
+            width: 33%
+            z-index: 3
+            transform: scale(1) translateX(0)
+            opacity: 1
+            pointer-events: auto
+            transition: 1s
         
         .prev
-            width: calc(var(--img-width) / 5) 
-            height: calc(var(--img-height) / 5)
-            transform: scale(0.85)
-            display: inline-block
-            cursor: pointer
-            opacity: 0.75
-            z-index: 0
-
-            &:hover
-                transform: scale(0.87)
-                opacity: 0.85
+            height: 100%
+            width: 33%
+            z-index: 2
+            transform: scale(0.8) translateX(0)
+            opacity: 0.6
+            pointer-events: auto
+            transition: 1s
         
         .next
-            width: calc(var(--img-width) / 5) 
-            height: calc(var(--img-height) / 5)
-            transform: scale(0.85) 
-            display: inline-block
-            cursor: pointer
-            opacity: 0.75
-            z-index: 0
-
-            &:hover
-                transform: scale(0.87)
-                opacity: 0.85
+            height: 100%
+            width: 33%
+            z-index: 2
+            transform: scale(0.8) translateX(0)
+            opacity: 0.6
+            pointer-events: auto
+            transition: 1s
                 
 
     .main
+        display: flex
+        flex-direction: column
+        align-items: left
+        grid-area: text
         position: relative
         height: 100%
-        width: 30%
+        width: 100%
         margin: 10px
         padding: 5px
         padding-top: 50px
@@ -403,10 +403,10 @@ section
         text-shadow: -3px 2px 14px rgb(0, 0, 0)
 
     h2
-        display: inline-block
+        display: block
         position: relative
         font-family: "Garamond"
-        font-size: 3rem
+        font-size: 2.75rem
         font-weight: normal
         margin: 1rem 0rem
         text-shadow: -3px 2px 14px rgb(0, 0, 0)
@@ -415,18 +415,19 @@ section
     p
         font-size: 0.9rem
         font-weight: 200
-        text-align: justify
         letter-spacing: 0.2rem
         line-height: 1.6rem
         text-shadow: 0 3px 6px rgb(0, 0, 0)
 
     .more
-            display: inline-flex
+            display: flex
             position: relative
+            justify-self: left
             float: left
             padding: 1rem 2rem
             transform: translateY(-0.5px)
             background-color: rgb(255, 255, 255)
+            width: fit-content
             overflow: hidden
             transition: background-color 0.3s ease-out
 
@@ -477,3 +478,17 @@ section
             right: 0
             opacity: 0.08
             transform: translate(0, 80vh)
+
+//below 992px is col-md-sm
+@media (max-width: 992px)
+    .cover-carousel
+        grid-area: carousel
+        
+    .main
+        grid-area: text
+        text-align: center
+        align-items: center
+    
+    .anusmriti
+        grid-auto-columns: 2fr 4fr
+        grid-template-areas: "carousel carousel" "text text" 
