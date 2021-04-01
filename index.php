@@ -103,9 +103,7 @@
 
     </section>
 
-
-    <section class="anusmriti parent">
-
+    <section class="anusmriti">
         <div class="cover-carousel">
             <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 3 - Issue 1.jpg">
             <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 2 - Issue 2.jpg">
@@ -128,6 +126,7 @@
     </section>
 
     <?php include getcwd() . '/partials/footer.php' ?>
+    
     <script src="src/js/home.js"></script>
     <script src="src/js/anusmriti.js"></script>
 </body>
