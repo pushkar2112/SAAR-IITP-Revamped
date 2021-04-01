@@ -105,9 +105,10 @@
 
     <section class="anusmriti">
         <div class="cover-carousel">
-            <img class="cover-slide prev" src="src/assets/images/anusmriti-covers/2.1.jpg">
-            <img class="cover-slide current" src="src/assets/images/anusmriti-covers/3.1.jpg">
-            <img class="cover-slide next" src="src/assets/images/anusmriti-covers/2.2.jpg">
+            <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 3 - Issue 1.jpg">
+            <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 2 - Issue 2.jpg">
+            <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 2 - Issue 1.jpg">
+            <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 1 - Issue 2.jpg">
         </div>
 
         <img src="./src/assets/images/cubes.svg" class="cubes top-left">
@@ -125,7 +126,7 @@
     </section>
 
     <?php include getcwd() . '/partials/footer.php' ?>
-
+    
     <script src="src/js/home.js"></script>
     <script src="src/js/anusmriti.js"></script>
 </body>
