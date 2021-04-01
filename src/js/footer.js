@@ -6,6 +6,6 @@ $('body').ready(() => {
         const footer_top = $('.footer').offset().top;
 
         $('.footer .cubes.top-left').css({'transform': 'scale(-1, -1) translate(20%, calc(30% - ' + String((scrollPos - footer_top)*speed*0.5) + 'px))'});
-        $('.footer .bg-logo').css({'bottom': '-' + String((scrollPos - footer_top)*speed*0.6) + 'px'});
-})
+        $('.footer .bg-logo').css({'top': 'calc(15% + ' + String((scrollPos - footer_top)*speed*0.6) + 'px)'});
+    })
 });

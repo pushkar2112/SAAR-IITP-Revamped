@@ -19,6 +19,7 @@ $('body').ready(() => {
         $('.navbar .link').removeClass('unfocus');
     });
 
+    // changes the navbar layout on resizing
     $(window).on('resize load', () => {
         $('body').css('overflow-y', 'auto');
 
@@ -44,9 +45,11 @@ function open_menu(){
 }
 
 function close_menu(){
-    $('body').css('overflow-y', 'auto');
-    $('.navbar').css('pointer-events', 'none');
-    $('.navbar').animate({'opacity': 0}, 200);
+    if(window.innerWidth <= breakpoint_tablet){
+        $('body').css('overflow-y', 'auto');
+        $('.navbar').css('pointer-events', 'none');
+        $('.navbar').animate({'opacity': 0}, 200);
+    }
 }
 
 function enable_smoothscroll() {
