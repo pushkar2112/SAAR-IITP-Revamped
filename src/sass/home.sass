@@ -1,10 +1,10 @@
 @import '_mixins'
 @import '_parallax'
+@import '_breakpoints'
 
 // *** this file has the styles for all the sections in the homepage ***
 
 // * common styles *
-
 section
     position: relative
     width: 100%
@@ -448,7 +448,7 @@ section
             left: 50%
 
 //below 992px is col-md-sm
-@media (max-width: 992px)
+@media (max-width: $col-lg)    
     .anusmriti
         padding: 30% 0
         grid-auto-columns: 100%
