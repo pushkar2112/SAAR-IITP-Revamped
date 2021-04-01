@@ -103,9 +103,7 @@
 
     </section>
 
-
-    <section class="anusmriti parent">
-
+    <section class="anusmriti">
         <div class="cover-carousel">
             <img class="cover-slide prev" src="src/assets/images/anusmriti-covers/2.1.jpg">
             <img class="cover-slide current" src="src/assets/images/anusmriti-covers/3.1.jpg">
@@ -126,7 +124,8 @@
         <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
     </section>
 
-    <!-- <?php include getcwd() . '/partials/footer.php' ?> -->
+    <?php include getcwd() . '/partials/footer.php' ?>
+
     <script src="src/js/home.js"></script>
     <script src="src/js/anusmriti.js"></script>
 </body>
