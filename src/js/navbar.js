@@ -1,4 +1,4 @@
-const breakpoint_tablet = 920;
+const breakpoint_tablet = 960;
 
 $('body').ready(() => {
 
@@ -22,14 +22,14 @@ $('body').ready(() => {
     $(window).on('resize load', () => {
         $('body').css('overflow-y', 'auto');
 
-        if(window.innerWidth <= breakpoint_tablet){
+        if (window.innerWidth <= breakpoint_tablet) {
             $('nav.navbar').prependTo($('body'));
 
             $('.navbar').css('pointer-events', 'none');
             $('.navbar').css('opacity', 0);
-        }else{
+        } else {
             $('nav.navbar').appendTo('.home .main');
-            
+
             $('.navbar').css('pointer-events', 'all');
             $('.navbar').css('opacity', 1);
         }
@@ -37,31 +37,31 @@ $('body').ready(() => {
 
 });
 
-function open_menu(){
+function open_menu() {
     $('body').css('overflow-y', 'hidden');
     $('.navbar').css('pointer-events', 'all');
-    $('.navbar').animate({'opacity': 1}, 200);
+    $('.navbar').animate({ 'opacity': 1 }, 200);
 }
 
-function close_menu(){
+function close_menu() {
     $('body').css('overflow-y', 'auto');
     $('.navbar').css('pointer-events', 'none');
-    $('.navbar').animate({'opacity': 0}, 200);
+    $('.navbar').animate({ 'opacity': 0 }, 200);
 }
 
 function enable_smoothscroll() {
-    
+
     // code for smooth-scrolling
     const root = $('html, body');
-    $(document).on('click', 'a[data-href]', function (event) {
+    $(document).on('click', 'a[data-href]', function(event) {
         event.preventDefault();
-    
+
         root.animate({
             scrollTop: $('.' + $(event.target).attr('data-href')).offset().top
         }, 500);
     });
 
-    
+
     // [[ could've used css for this but i was
     // making sure tha it works on all browsers ]]
 }

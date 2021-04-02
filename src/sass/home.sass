@@ -52,6 +52,7 @@ section
             letter-spacing: 0.45rem
             line-height: 1.5rem
             text-shadow: 0 2px 6px rgba(0,0,0,1)
+            min-width: 250px
 
     .scroll-indic
         @include position_and("center auto", "translateY(-30px)")
@@ -60,6 +61,31 @@ section
         transition: all 0.3s 0.3s ease-in-out
         opacity: 0
 
+@media (max-width: $col-lg)
+    .home .main 
+        h1
+            font-size: 5rem
+            word-spacing: 3rem
+
+        h5
+            font-size: 0.625rem
+
+@media (max-width: $col-mdlg)
+    .home .main 
+        h1
+            font-size: 3.5rem
+            word-spacing: 1.5rem
+        h5
+            font-size: 0.5rem
+
+@media (max-width: $col-sm)
+    .home .main 
+        h1
+            font-size: 3rem
+            word-spacing: 1.5rem
+        h5
+            font-size: 0.5rem
+    
 // somehting ain't right with this section's positionings. have to fix this
 .about
     height: 120vh
@@ -117,13 +143,14 @@ section
         @include position_and("center center")
         text-transform: uppercase
         text-align: center
+        width: 45%
 
         h1
-            padding: 1rem 4rem
+            padding: 3vh 4vw
             font-family: "Garamond"
-            font-size: 3rem
+            font-size: 4vw
             font-weight: 600
-            word-spacing: 2rem
+            word-spacing: 1vw
             line-height: 3rem
             text-shadow: 0 2px 22px black
             border: 5px solid white
@@ -131,16 +158,17 @@ section
     .more
         position: relative
         float: right
-        padding: 1rem 2rem
+        padding: 3vh 4vw
         background-color: white
         transform: translateY(-0.5px)
         transition: background-color 0.3s ease-out
         overflow: hidden
+        height: fit-content
 
         .text
             display: inline-block
             font-family: "Garamond"
-            font-size: 0.8rem
+            font-size: 1.25vw
             color: rgb(36, 36, 36)
             letter-spacing: 0.25rem
             text-transform: capitalize
@@ -162,6 +190,21 @@ section
 
         &:hover .arrow
             left: 50%
+
+@media ( max-width: $col-mdlg )
+    .gallery 
+        .main 
+            width: 60%
+            h1
+                padding: 1vh 4.5vw
+                font-size: 6vw
+                word-spacing: 1.5vw
+                border: 3px solid white
+        .more
+            padding: 1.5vh 3vw
+            .text
+                font-size: 2vw
+    
 
 .timeline
     min-height: 100vh
@@ -477,7 +520,6 @@ section
             opacity: 0.08
             transform: translate(0, 80vh)
 
-//below 992px is col-md-sm
 @media (max-width: $col-lg)
     .cover-carousel
         grid-area: carousel

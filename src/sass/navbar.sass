@@ -1,4 +1,5 @@
 @import '_mixins'
+@import '_breakpoints'
 
 // web view navbar
 .open-menu,
@@ -47,10 +48,7 @@
     display: none
 
 
-// tablet and mobile view navbar
-$breakpoint-tablet: 920px
-
-@media (max-width: $breakpoint-tablet)
+@media (max-width: $col-lg)
     
     .navbar
         position: absolute
