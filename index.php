@@ -109,20 +109,22 @@
             <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 2 - Issue 2.jpg">
             <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 2 - Issue 1.jpg">
             <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 1 - Issue 2.jpg">
+            <img class="cover-slide" src="src/assets/images/anusmriti-covers/Vol. 1 - Issue 1.jpg">
         </div>
-
-        <img src="./src/assets/images/cubes.svg" class="cubes top-left">
-        <div class="main">
+        
+        <div class="header">
             <h1>Anusmriti</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="main">
             <h2 class="issue-text">Vol. 3 - Issue 1</h2>
 
-            <a href="#" class="more">
+            <a href="#" target="_blank" class="more">
                 <span class="text">Read Now</span>
                 <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
             </a>
         </div>
-        <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
     </section>
 
     <?php include getcwd() . '/partials/footer.php' ?>
