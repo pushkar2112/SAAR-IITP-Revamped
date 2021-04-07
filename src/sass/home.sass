@@ -363,6 +363,32 @@ section
             transform: translate(0, 95vh)
             opacity: 0.1
 
+@media ( max-width: $col-sm )
+    .timeline
+        padding: 15% 15% 15% 10%
+
+        .main 
+            h1
+                font-size: 3rem
+                margin-bottom: 5px
+
+            h1::after
+                left: -10px
+                width: 61px
+        .event 
+            margin: 7.5vh 0
+
+            .title
+                font-size: 1rem
+                letter-spacing: 0.8rem
+            .desc
+                font-size: 0.75rem
+                letter-spacing: 0.1rem
+
+            .marker
+                width: 10px
+                height: 10px
+
 .anusmriti
     display: grid
     position: relative
