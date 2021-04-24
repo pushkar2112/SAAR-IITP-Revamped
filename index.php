@@ -61,7 +61,7 @@
 
         <div class="main">
             <h1>G a l l e r y</h1>
-            <a href="#" class="more">
+            <a href="gallery.php" class="more">
                 <span class="text">See More</span>
                 <img src="./src/assets/images/arrow-white-small.svg" class="arrow">
             </a>

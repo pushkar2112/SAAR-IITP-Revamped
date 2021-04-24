@@ -46,13 +46,4 @@ $('body').ready(() => {
         const issue = cover_name.substring(cover_name.indexOf('-') + 2).replace(' ', '').toLowerCase();
         $('.anusmriti .more').attr('href', 'public/anusmriti/' + volume + '/' + issue + '.pdf');
     }
-
-    // Keyboard nav
-    $('html body').keydown(function(e) {
-        if (e.keyCode == 37) { // left
-            $(slides[prev]).trigger('click');
-        } else if (e.keyCode == 39) { // right
-            $(slides[next]).trigger('click');
-        }
-    });
 });
