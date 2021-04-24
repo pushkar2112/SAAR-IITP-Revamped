@@ -49,6 +49,7 @@
         <div class="main">
             <h1>About</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi incidunt deserunt fugit aliquid dignissimos iure commodi tenetur quis aperiam placeat doloremque labore vitae porro voluptate itaque, sint cum numquam dicta ratione adipisci consequatur. Molestiae, aut ex mollitia nisi, dolor a exercitationem laudantium deserunt atque optio debitis voluptate dolorem quod! Ducimus quisquam, delectus rem saepe et culpa quos animi esse dolor incidunt recusandae magni aut minima porro accusantium nesciunt vel velit autem amet, ratione distinctio? Sit optio natus id praesentium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi incidunt deserunt fugit aliquid dignissimos iure commodi tenetur quis aperiam placeat doloremque labore vitae porro voluptate itaque, sint cum numquam dicta ratione adipisci consequatur. Molestiae, aut ex mollitia nisi, dolor a exercitationem laudantium deserunt atque optio debitis voluptate dolorem quod! Ducimus quisquam, delectus rem saepe et culpa quos animi esse dolor incidunt recusandae magni aut minima porro accusantium nesciunt vel velit autem amet, ratione distinctio? Sit optio natus id praesentium?</p>
         </div>
         <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">
     </section>
