@@ -19,7 +19,7 @@ $('body').ready(() => {
         
         const about_top = $('.about').offset().top;
         const timeline_top= $('.timeline').offset().top;
-        const anusmriti_top= $('.anusmriti').offset().top;
+        // const anusmriti_top= $('.anusmriti').offset().top;
 
         $('.about .cubes.top-left').css({'transform': 'scale(-1, -1) translate(1vh, calc(1vh - ' + String(about_top*speed) + 'px))'});
         $('.about .cubes.bottom-right').css({'transform': 'translate(0, calc(80vh + ' + String(about_top*speed*1.2) + 'px))'});

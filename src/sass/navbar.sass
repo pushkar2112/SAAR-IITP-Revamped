@@ -1,6 +1,13 @@
 @import '_mixins'
 @import '_breakpoints'
 
+@mixin menubtn_mouseevents($translateY)
+    &:hover
+        @include position_and("center auto", "translateY(calc(" + $translateY + " + 1px))", $type: "relative")
+        
+    &:active
+        @include position_and("center auto", "translateY(calc(" + $translateY + " + 3px))", $type: "relative")
+
 // web view navbar
 .open-menu,
 .close-menu
@@ -31,17 +38,66 @@
 
     .link
         display: inline-block
-        padding: 0 0.8rem
-        font-size: 0.84rem
+        padding: 0 0.72rem
+        font-size: 0.756rem
         font-weight: 600
-        letter-spacing: 0.25rem
+        letter-spacing: 0.225rem
         cursor: pointer
+        text-align: center
         text-shadow: 0 1px 14px black
         transition: opacity 0.2s ease-in-out
         text-transform: uppercase
     
-    .unfocus
-        opacity: 0.6
+        &.unfocus
+            opacity: 0.6
+    
+    .alum-portal:not(.link)
+        display: block
+        position: absolute
+        top: 100%
+        left: 50%
+        // padding: 0.5rem 1.5rem
+        // font-weight: 400
+        color: rgb(255, 102, 102)
+        font-size: 0.96rem
+        font-weight: 600
+        letter-spacing: 0rem
+        // border: 2px solid white
+        transform: translate(-50%, 1.8rem)
+        transition: all 0.2s, letter-spacing 0.1s ease-out
+        text-shadow: 0 0 30px rgb(255, 102, 102)
+        pointer-events: none
+
+        &::before
+            content: "〉〉"
+            display: inline
+        
+        &::after
+            content: "〈〈"
+            display: inline
+
+        &:hover
+            text-shadow: 0 0 5px rgb(255, 102, 102)
+            letter-spacing: -0.27rem
+
+        span
+            margin: 0 0.5rem 0 1rem
+            letter-spacing: 0.18rem
+            transition: margin 0.2s
+            pointer-events: all
+        
+        &:hover span
+            margin: 0 -0.1rem 0 0.4rem
+
+        // &:hover
+        //     background-color: white
+        //     border-color: white
+        //     color: rgb(0, 26, 26)
+        //     transform: translate(-50%, calc(2rem - 1px))
+        //     box-shadow: 0px 10px 45px rgba(0, 0, 0, 0.7)
+
+        // &:active
+        //     transform: translate(-50%, 2rem)
 
 .navbar .open-menu,
 .navbar .close
@@ -49,12 +105,12 @@
 
 
 @media only (max-width: $col-lg)
-
     .open-menu
         display: block
-        @include position_and("center auto", $type: "relative")
+        @include position_and("center auto", $args: "translateY(1.5rem)", $type: "relative")
+        @include menubtn_mouseevents($translateY: "1.5rem")
         padding: 0.8rem 2rem
-        margin-top: 1.5rem
+        margin-top: 1rem
         border: none
         color: rgb(0, 26, 26)
         font-size: 0.84rem
@@ -62,50 +118,67 @@
         word-spacing: 0.25rem
         background-color: white
         box-shadow: 0px 10px 45px black
-        text-shadow: 0 1px 18px black
+        text-shadow: 0 1px 18px rgba(0, 0, 0, 0.7)
         transition: transform 0.2s ease-in-out
         cursor: pointer
-
-        &:hover
-            @include position_and("center auto", "translateY(2px)", $type: "relative")
 
     .navbar
         position: absolute
         left: 0
         right: 0
         height: 100vh
-        padding: 0
+        padding: 10vh 15vw
         background-color: rgb(0, 26, 26)
         transition: opacity 0.05s ease
         pointer-events: none
+        overflow: hidden auto
         opacity: 0
         z-index: 2
 
     .navbar .links
         @include position_and("center auto", $type: "relative")
         width: 100%
-        height: 100%
-        padding: 20% 10%
+        padding: 5% 0
+        margin: 0
         flex-direction: column
         justify-content: flex-start
         align-items: center
-        overflow-y: auto
+        overflow-x: hidden
 
         &::before,
         &::after
             display: none
     
-        & .link
+        .link
             margin: 1.5rem
             font-size: 1.2rem
+            opacity: 0.4
+
+            &.alum-portal, &.alum-portal.unfocus
+                color: rgb(255, 102, 102)
+                opacity: 0.6
+            
+            &.unfocus
+                opacity: 0.4
+        
+            &.focus
+                opacity: 1
 
     .close-menu
         display: block
-        position: absolute
-        top: 40px
-        right: 60px
-        font-size: 25px
+        position: sticky
+        top: 0
+        left: 50%
+        padding: 10px 14px
+        font-size: 15px
+        transform: translate(-50%, 0)
         background: none
-        border: none
+        border: 2px solid rgba(255, 255, 255, 0.4)
+        border-radius: 100%
         cursor: pointer
+        transition: all 0.2s
         z-index: 3
+    
+        &.scrolled, &:hover
+            background-color: rgba(0, 0, 0, 0.6)
+            box-shadow: 0 5px 40px 15px rgba(0, 0, 0, 1)

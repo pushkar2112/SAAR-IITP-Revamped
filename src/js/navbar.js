@@ -1,39 +1,50 @@
-const breakpoint_tablet = 960;
+const breakpoint_lg = 960;
+const breakpoint_xsm = 446;
 
 $('body').ready(() => {
 
     enable_smoothscroll();
-
-    // hover aimation triggers
-
-    // [[ i just toggled a class so that
-    // it can be easier to change the animations
-    // for different screen sizes]]
-
-    $('nav.navbar .link').mouseenter(function() {
-        $(this).siblings().addClass('unfocus');
-    });
-
-    $('nav.navbar .link').mouseleave(function() {
-        $(this).siblings().removeClass('unfocus');
-    });
+    listen_mouseevents();
 
     // changes the navbar layout on resizing
     $(window).on('resize load', () => {
         $('body').css('overflow-y', 'auto');
 
-        if (window.innerWidth <= breakpoint_tablet) {
+        if (window.innerWidth <= breakpoint_lg) {
             $('nav.navbar')
             .prependTo($('body'))
             .css('pointer-events', 'none')
             .css('opacity', 0);
+
+            $('nav.navbar .alum-portal')
+            .addClass('link');
+
         } else {
             $('nav.navbar')
-            .appendTo('.home .main')
+            .appendTo('.landing .main')
             .css('pointer-events', 'all')
             .css('opacity', 1);
+
+            $('nav.navbar .alum-portal')
+            .removeClass('link');
         }
+
+        if (window.innerWidth <= breakpoint_xsm){
+            $('.landing .main h5').appendTo('.landing .main');
+        }else{
+            $('.landing .main .open-menu').appendTo('.landing .main');
+        }
+
+        listen_mouseevents();
     })
+
+    $('nav.navbar').on('scroll', function () {
+        if(window.innerWidth <= breakpoint_lg && $(this).scrollTop() > 0){
+            $('nav.navbar .close-menu').addClass('scrolled');
+        }else{
+            $('nav.navbar .close-menu').removeClass('scrolled');
+        }
+    });
 
 });
 
@@ -46,7 +57,7 @@ function open_menu() {
 }
 
 function close_menu() {
-    if (window.innerWidth <= breakpoint_tablet) {
+    if (window.innerWidth <= breakpoint_lg) {
         $('body').css('overflow-y', 'auto');
         $('nav.navbar')
         .css('pointer-events', 'none')
@@ -57,8 +68,9 @@ function close_menu() {
 function enable_smoothscroll() {
 
     // code for smooth-scrolling
-    $('a[data-link-to').click(function(e) {
+    $('a[data-link-to]').click(function(e) {
         e.preventDefault();
+        console.log(this);
 
         $('body').animate({
             scrollTop: $('.' + $(this).attr('data-link-to'))[0].offsetTop
@@ -68,4 +80,24 @@ function enable_smoothscroll() {
 
     // [[ could've used css for this but i was
     // making sure that it works on all browsers ]]
+}
+
+function listen_mouseevents(){
+    // hover aimation triggers
+
+    // [[ i just toggled a class so that
+    // it can be easier to change the animations
+    // for different screen sizes]]
+
+    $('nav.navbar .links *').off('mouseenter mouseleave');
+
+    $('nav.navbar .link').mouseenter(function() {
+        $(this).addClass('focus')
+        .siblings('.link').addClass('unfocus');
+    });
+
+    $('nav.navbar .link').mouseleave(function() {
+        $(this).removeClass('focus')
+        .siblings('.link').removeClass('unfocus');
+    });
 }

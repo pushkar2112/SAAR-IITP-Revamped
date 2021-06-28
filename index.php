@@ -25,14 +25,20 @@
 </head>
 
 <body>
-    <section class="home">
+    <section class="landing">
         <!-- parallax background image container -->
-        <div class="bg-parallax" data-src="./src/assets/images/bgA.jpg"></div>
+        <div class="bg-parallax" data-src="./src/assets/images/bgB.png"></div>
 
         <img src="./src/assets/images/logo1.png" class="logo">
         <div class="main">
-            <h1>S A A R</h1>
-            <h5>Students' Association for Alumni Relations</h5>
+            <!-- <h1>S A A R</h1> -->
+            <div class="saar">
+                <h1>S</h1>
+                <h1>A</h1>
+                <h1>A</h1>
+                <h1>R</h1>
+            </div>
+            <h5><span>Students' Association</span> <span>for</span> <span>Alumni Relations</span></h5>
             <!-- the navbar gets inserted here -->
             <?php include getcwd() . '/partials/navbar.php' ?>
         </div>
@@ -48,7 +54,6 @@
         <img src="./src/assets/images/cubes.svg" class="cubes top-left">
         <div class="main">
             <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi incidunt deserunt fugit aliquid dignissimos iure commodi tenetur quis aperiam placeat doloremque labore vitae porro voluptate itaque, sint cum numquam dicta ratione adipisci consequatur. Molestiae, aut ex mollitia nisi, dolor a exercitationem laudantium deserunt atque optio debitis voluptate dolorem quod! Ducimus quisquam, delectus rem saepe et culpa quos animi esse dolor incidunt recusandae magni aut minima porro accusantium nesciunt vel velit autem amet, ratione distinctio? Sit optio natus id praesentium?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nisi incidunt deserunt fugit aliquid dignissimos iure commodi tenetur quis aperiam placeat doloremque labore vitae porro voluptate itaque, sint cum numquam dicta ratione adipisci consequatur. Molestiae, aut ex mollitia nisi, dolor a exercitationem laudantium deserunt atque optio debitis voluptate dolorem quod! Ducimus quisquam, delectus rem saepe et culpa quos animi esse dolor incidunt recusandae magni aut minima porro accusantium nesciunt vel velit autem amet, ratione distinctio? Sit optio natus id praesentium?</p>
         </div>
         <img src="./src/assets/images/cubes.svg" class="cubes bottom-right">

@@ -7,6 +7,7 @@
         <a class="link" onclick="close_menu()" data-link-to="timeline">timeline</a>
         <a class="link" onclick="close_menu()" data-link-to="anusmriti">anusmriti</a>
         <a class="link" onclick="close_menu()" data-link-to="contact">contact</a>
+        <a class="alum-portal link" href="#"><span>Alumni Portal</span></a>
     </div>
 </nav>
 

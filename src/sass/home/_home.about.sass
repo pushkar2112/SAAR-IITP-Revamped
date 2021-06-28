@@ -1,0 +1,50 @@
+.about
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    min-height: 120vh
+    padding: 15vh 25% 20vh 25%
+
+    .main
+        max-width: 700px
+    
+    h1
+        display: inline-block
+        position: relative
+        font-family: "Garamond"
+        font-size: 3.6rem
+        font-weight: normal
+        margin-bottom: 3rem
+        text-shadow: -3px 2px 14px black
+
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: -45px
+            width: 80px
+            height: 2px
+            background-color: white
+            box-shadow: -3px 2px 14px black
+
+    p
+        font-size: 0.81rem
+        font-weight: 200
+        text-align: justify
+        letter-spacing: 0.2rem
+        line-height: 1.44rem
+        text-shadow: 0 3px 6px black
+    
+    .cubes.top-left
+        top: 0
+        left: 0
+        transform: scale(-1,-1) translate(1vh, 1vh)
+        opacity: 0.08
+    
+    .cubes.bottom-right
+        top: 0
+        right: 0
+        transform: translate(0, 80vh)
+        opacity: 0.08

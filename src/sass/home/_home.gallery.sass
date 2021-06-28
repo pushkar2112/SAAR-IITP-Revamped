@@ -1,0 +1,68 @@
+.gallery
+    height: 60vh
+
+    .main
+        display: inline-block
+        @include position_and("center center")
+        text-transform: uppercase
+        text-align: center
+        width: 45%
+
+        h1
+            padding: 3vh 4vw
+            font-family: "Garamond"
+            font-size: 4vw
+            font-weight: 600
+            word-spacing: 1vw
+            line-height: 3rem
+            text-shadow: 0 2px 22px black
+            border: 5px solid white
+        
+    .more
+        position: relative
+        float: right
+        padding: 3vh 4vw
+        background-color: white
+        transform: translateY(-0.5px)
+        transition: background-color 0.2s ease-out
+        overflow: hidden
+        height: fit-content
+
+        .text
+            display: inline-block
+            font-family: "Garamond"
+            font-size: 1.25vw
+            color: rgb(36, 36, 36)
+            letter-spacing: 0.25rem
+            text-transform: capitalize
+            opacity: 1
+
+        .arrow
+            display: inline-block
+            @include position_and("center center")
+            height: 0.94rem
+            transition: opacity 0.2s ease-out
+            opacity: 0
+            
+        &:hover
+            background-color: rgb(0, 25, 25) 
+
+        &:hover .text
+            opacity: 0
+
+        &:hover .arrow
+            opacity: 1
+
+@media ( max-width: $col-mdlg )
+    .gallery 
+        .main 
+            width: 60%
+            h1
+                padding: 1vh 4.5vw
+                font-size: 6vw
+                word-spacing: 1.5vw
+                border: 3px solid white
+        .more
+            padding: 1.5vh 3vw
+            .text
+                font-size: 2vw
