@@ -5,26 +5,28 @@ body
     position: relative
     width: 100vw
     height: 100vh
-    background: linear-gradient(27deg, #3cd6a5, #ffffff00)
+    background: #001d1d
+    overflow-y: hidden
 
     .cubes
         display: block
-        position: absolute
+        position: fixed
         width: 30vh
         user-select: none
-        z-index: -1
+        z-index: -10 
         opacity: 0.3
-        overflow: clip
+        overflow: hidden
 
-        &.top-left 
-            transform: translate(-3vw, -3vh)
+        &.top-right 
+            transform: translate3d(90vw, -3vh, -1px)
 
-        &.bottom-right
-            transform: translate(90vw, 80vh)
+        &.bottom-left
+            transform: translate3d(-3vw, 80vh, -1px)
         
         
 
     .header
+        position: absolute
         display: flex
         flex-direction: row
         justify-content: left
@@ -33,50 +35,103 @@ body
         align-items: center
         padding-left: 3%
         padding-top: 3%
+        z-index: 10
 
         .logo
             height: 9.5vh
             width: auto
             padding-left: 10px 
+            cursor: pointer
 
         .back-button
             height: 4vh
-            width: auto
+            width: 4vh
             cursor: pointer
 
     .viewer
+        // width: 100%
+        // height: 60vh
+        // transform: translateY(-7.5vh)
+        position: absolute
+        height: 100%
         width: 100%
-        height: 60vh
-        transform: translateY(-7.5vh)
         display: flex
         justify-content: center
         align-items: center
 
-        .active-img
-            height: 100%
-            width: auto
+        .album-image
+            position: absolute
+            width: 60vw
+            height: auto
             min-width: 300px
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.33)
             cursor: pointer
             border-radius: 1%
+            z-index: 0
+            opacity: 0
+            transition: all 0.2s ease-in-out
+            transform: scale(0) translate(0, 0)
 
-    .viewer::after
-        content: ''
-        display: block
+        .active
+            position: relative
+            transform: scale(1) translate(0, 0)
+            opacity: 1
+            z-index: 2
+        
+        .prev
+            transform: scale(0.8) translate(-110%, 0)
+            opacity: 0.6
+            z-index: 1
+        
+        .next
+            transform: scale(0.8) translate(110%, 0)
+            opacity: 0.6
+            z-index: 1
+
+    // .viewer::after
+    //     content: ''
+    //     display: block
+    //     position: absolute
+    //     top: 100%
+    //     left: 50%
+    //     transform: translate(-50%, 4vh)
+    //     width: 20vw
+    //     height: 3px
+    //     border-radius: 2px
+    //     background-color: white
+    //     box-shadow: -3px 2px 14px black
+
+    .arrow-icon
         position: absolute
-        top: 100%
+        width: 2.5vw
+        height: 2.5vw
+        min-width: 20px
+        min-height: 20px
+        z-index: 20
+        background-color: rgba(0, 0, 0, 0.5)
+        border-radius: 0px 5px 5px 0px
+        top: 65vh
         left: 50%
-        transform: translate(-50%, 4vh)
-        width: 20vw
-        height: 3px
-        border-radius: 2px
-        background-color: white
-        box-shadow: -3px 2px 14px black
+        padding: 1px 5px 1px 5px
+        transform-origin: center center
+        transform: rotate(-90deg) translate(100%, -50%)
+        transition: top 0.5s ease-in-out
+        cursor: pointer
+
+        &.hide
+            transform-origin: center center
+            transform: rotate(90deg) translate(-100%, 50%)
+            border-radius: 5px 0px 0px 5px
+            top: 95vh
+
 
     .scroller
-        width: 95vw
-        height: calc(100vh - (15vh + 60vh - 7.5vh + 4vh + 5vh))
-        margin: 1vh 2.5vw 
+        width: 100vw
+        height: 35vh
+        top: 65vh
+        margin: 0vh 0vw 
+        padding: 5vh 2.5vw 5vh 2.5vw
+        background: linear-gradient(360deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0.7) 37%, hsla(0, 0%, 0%, 0.5) 100%);
         display: flex
         flex-direction: row
         justify-content: left
@@ -84,17 +139,45 @@ body
         overflow-y: hidden
         overflow-x: scroll
         white-space: nowrap
+        position: absolute
+        z-index: 10
+        transition: transform 0.5s ease-in-out
+        transform: translateY(0)
 
-        .image-card
+        .album
+            position: relative
             height: 100%
             width: auto
             cursor: pointer
             border-radius: 2%
             margin: 5px
+            background-size: contain
+            background-repeat: no-repeat
 
             &.active
-                border: solid 5px white
+                outline: white solid 5px !important;
+                outline-offset: -5px;
 
+            .image-card
+                display: none
+                height: 100%
+                width: auto
+
+                &.album-cover
+                    display: block
+                    visibility: hidden
+            
+            h3.album-title
+                font-weight: 200
+                padding: 5px
+                font-style: italic
+                font-family: 'Garamond'
+                text-align: center
+                font-size: 3vh
+
+        &.hide
+            transform: translateY(30vh)
+            //display: none
 
 ::-webkit-scrollbar
     width: 20px
