@@ -4,6 +4,17 @@ A revamp of the SAAR, IIT Patna website.
 # Before you start working
 ### Pre-requisites
 * XAMPP v8.0.0+ (Download: https://www.apachefriends.org/download.html)
+* VS Code with Live Sass Compiler plugin (Download: https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+Add the following block in your VS Code's `settings.json` file.
+```
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        }
+    ]
+ ```
 * Basic knowledge of PHP, HTML, Sass, jQuery (depending on your work)
 * Some experience with CSS (depending on your work)
 
