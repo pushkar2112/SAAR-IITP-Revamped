@@ -5,36 +5,36 @@ body
     position: relative
     width: 100vw
     height: 100vh
+    // background color matching the theme
     background: #001d1d
-    overflow-y: hidden
+    overflow: hidden
 
+    // background cube design
     .cubes
         display: block
         position: fixed
         width: 30vh
         user-select: none
-        z-index: -10 
-        opacity: 0.3
+        z-index: -1
+        opacity: 0.1
         overflow: hidden
 
         &.top-right 
-            transform: translate3d(90vw, -3vh, -1px)
+            transform: translate(90vw, -3vh)
 
         &.bottom-left
-            transform: translate3d(-3vw, 80vh, -1px)
+            transform: translate(-3vw, 80vh)
         
-        
-
+    // The header with the logo and back button
     .header
         position: absolute
         display: flex
         flex-direction: row
         justify-content: left
-        width: 100%
+        width: 100vw
         height: 15vh
         align-items: center
-        padding-left: 3%
-        padding-top: 3%
+        padding: 3vh 3vw
         z-index: 10
 
         .logo
@@ -49,9 +49,6 @@ body
             cursor: pointer
 
     .viewer
-        // width: 100%
-        // height: 60vh
-        // transform: translateY(-7.5vh)
         position: absolute
         height: 100%
         width: 100%
@@ -59,6 +56,7 @@ body
         justify-content: center
         align-items: center
 
+        // Image card 
         .album-image
             position: absolute
             width: 60vw
@@ -67,40 +65,42 @@ body
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.33)
             cursor: pointer
             border-radius: 1%
-            z-index: 0
             opacity: 0
             transition: all 0.2s ease-in-out
             transform: scale(0) translate(0, 0)
 
-        .active
-            position: relative
-            transform: scale(1) translate(0, 0)
-            opacity: 1
-            z-index: 2
-        
-        .prev
-            transform: scale(0.8) translate(-110%, 0)
-            opacity: 0.6
-            z-index: 1
-        
-        .next
-            transform: scale(0.8) translate(110%, 0)
-            opacity: 0.6
-            z-index: 1
+            &.active
+                position: relative
+                transform: scale(1) translate(0, 0)
+                opacity: 1
+                z-index: 2
+            
+            // Preview card on the left
+            &.prev
+                transform: scale(0.8) translate(-110%, 0)
+                opacity: 0.6
+                z-index: 1
+            
+            // Preview card on the right
+            &.next
+                transform: scale(0.8) translate(110%, 0)
+                opacity: 0.6
+                z-index: 1
 
-    // .viewer::after
-    //     content: ''
-    //     display: block
-    //     position: absolute
-    //     top: 100%
-    //     left: 50%
-    //     transform: translate(-50%, 4vh)
-    //     width: 20vw
-    //     height: 3px
-    //     border-radius: 2px
-    //     background-color: white
-    //     box-shadow: -3px 2px 14px black
+    .viewer::after
+        content: ''
+        display: block
+        position: absolute
+        top: 100%
+        left: 50%
+        transform: translate(-50%, 4vh)
+        width: 20vw
+        height: 3px
+        border-radius: 2px
+        background-color: white
+        box-shadow: -3px 2px 14px black
 
+    // Pull-up arrow
     .arrow-icon
         position: absolute
         width: 2.5vw
@@ -118,13 +118,14 @@ body
         transition: top 0.5s ease-in-out
         cursor: pointer
 
+        // Flips the arrow and translates to the right place when the pull-up is active
         &.hide
             transform-origin: center center
             transform: rotate(90deg) translate(-100%, 50%)
             border-radius: 5px 0px 0px 5px
             top: 95vh
 
-
+    // The slider containing the album covers
     .scroller
         width: 100vw
         height: 35vh
