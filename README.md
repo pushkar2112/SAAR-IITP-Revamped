@@ -1,5 +1,5 @@
 # SAAR-IITP-Revamped
-A revamp of the SAAR, IIT Patna website.
+Student Association for Alumni Relations (SAAR) is the cell for outreach and alumni relation of IIT Patna. This project is aimed to revamp the existing website with simple, elegant, and modern UI using HTML/SASS/JS framework.
 
 # Before you start working
 ### Pre-requisites
