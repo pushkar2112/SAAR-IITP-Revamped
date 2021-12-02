@@ -29,6 +29,6 @@ git clone -branch revamp2 --depth 1 https://github.com/StrixROX/SAAR-IITP-Revamp
 
 Now you should be able to see the website.
 
-#### NOTE: A good place to start would be the `src/` folder in the repo or the `index.php` file at the repo root.
+#### NOTE: A good place to start would be the `/src/` folder in the repo or the `/index.php` file at the repo root.
 
 #### NOTE: More comments will be added to the codebase soon.
