@@ -19,7 +19,7 @@ Add the following block in your VS Code's `settings.json` file.
 * Some experience with CSS (depending on your work)
 
 ### How to run
-1. Clone this repo in the `htdocs` folder in your XAMPP installation directory (generally, `C:\xampp` on Windows, `/opt/lampp` on Linux and `/Applications/XAMPP` on Mac OS X) using the command:
+1. Clone the `revamp2` branch of this repo in the `htdocs` folder in your XAMPP installation directory (generally, `C:\xampp` on Windows, `/opt/lampp` on Linux and `/Applications/XAMPP` on Mac OS X) using the command:
 ```
 git clone -branch revamp2 --depth 1 https://github.com/StrixROX/SAAR-IITP-Revamped.git
 ```
