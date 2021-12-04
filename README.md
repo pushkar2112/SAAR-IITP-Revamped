@@ -19,7 +19,7 @@ Add the following block in your VS Code's `settings.json` file.
 * Some experience with CSS (depending on your work)
 
  
-#### NOTE: PHP and HTML share the same syntax so knowing either will be fine. Also, SASS is similar to CSS but has a cleaner syntax (no braces and semicolon). Also, the styling code is written in SASS but transcribed into CSS by a live SASS compiler (We recommend ritwickdey.live-sass vscode extension)
+#### NOTE: For this project since PHP usage is minimal, the syntax of PHP files resemble HTML. Also, SASS is similar to CSS but has a cleaner syntax (no braces and semicolon). So, you can treat this project as an HTML/CSS project
 
 ### How to run
 1. Clone the `revamp2` branch of this repo in the `htdocs` folder in your XAMPP installation directory (generally, `C:\xampp` on Windows, `/opt/lampp` on Linux and `/Applications/XAMPP` on Mac OS X) using the command:
